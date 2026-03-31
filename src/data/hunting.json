@@ -1,13 +1,15 @@
 {
   "season": 3,
+  "note": "인기 사냥터/마릿수 데이터는 시즌4 전 추가 조사 필요. 현재는 구조만 잡아둠.",
   "zones": [
     {
       "levelRange": "~200",
-      "name": "테라/하이퍼 버닝",
+      "name": "하이퍼 버닝",
       "area": "버닝 이벤트",
       "force": null,
       "forceType": null,
-      "description": "버닝 이벤트로 200레벨까지 빠르게 도달"
+      "description": "하이퍼버닝으로 200레벨까지 빠르게 도달",
+      "popularSpots": null
     },
     {
       "levelRange": "200~210",
@@ -15,15 +17,31 @@
       "area": "아케인 리버",
       "force": "30~45",
       "forceType": "아케인포스",
-      "description": "200레벨 첫 진입 지역. 아케인포스 확보 시작"
+      "description": "200레벨 첫 진입 지역. 아케인포스 확보 시작",
+      "popularSpots": [
+        {
+          "map": "역화하는 기억의 길 1",
+          "mobCount": null,
+          "reason": "1맵 구조, 몬스터 밀집도 높음. 뉴비 첫 사냥터로 최적.",
+          "youtubeSearch": "소멸의여로+사냥터+추천"
+        }
+      ]
     },
     {
       "levelRange": "210~220",
-      "name": "아르카나 / 츄츄 아일랜드",
+      "name": "아르카나",
       "area": "아케인 리버",
       "force": "45",
       "forceType": "아케인포스",
-      "description": "아케인포스 45 이상 권장. 경험치 효율 높음"
+      "description": "아케인포스 45 이상 권장. 경험치 효율 높음",
+      "popularSpots": [
+        {
+          "map": "캐비야르의 숲 깊은 곳 3",
+          "mobCount": null,
+          "reason": "마릿수 많고 리젠 빠름. 아르카나 대표 사냥터.",
+          "youtubeSearch": "아르카나+사냥터+추천"
+        }
+      ]
     },
     {
       "levelRange": "220~240",
@@ -31,7 +49,15 @@
       "area": "아케인 리버",
       "force": "45",
       "forceType": "아케인포스",
-      "description": "아르카나에서 모라스로 전환. 아케인포스 꾸준히 강화"
+      "description": "아르카나에서 모라스로 전환. 아케인포스 꾸준히 강화",
+      "popularSpots": [
+        {
+          "map": "가장 안쪽 곳 (모라스)",
+          "mobCount": null,
+          "reason": "모라스 대표 사냥터. 맵 구조가 사냥에 유리.",
+          "youtubeSearch": "모라스+사냥터+추천"
+        }
+      ]
     },
     {
       "levelRange": "240~260",
@@ -39,7 +65,15 @@
       "area": "아케인 리버",
       "force": "90",
       "forceType": "아케인포스",
-      "description": "아케인포스 90(완성) 목표. 그란디스 전환 준비"
+      "description": "아케인포스 90(완성) 목표. 그란디스 전환 준비",
+      "popularSpots": [
+        {
+          "map": "미지의 학구역 (리멘)",
+          "mobCount": null,
+          "reason": "아케인 리버 마지막 구간 인기 사냥터.",
+          "youtubeSearch": "리멘+사냥터+추천"
+        }
+      ]
     },
     {
       "levelRange": "260~265",
@@ -47,7 +81,15 @@
       "area": "그란디스",
       "force": "30",
       "forceType": "어센틱포스",
-      "description": "그란디스 첫 진입. 어센틱포스 수집 시작"
+      "description": "그란디스 첫 진입. 어센틱포스 수집 시작",
+      "popularSpots": [
+        {
+          "map": "서쪽 성벽 1",
+          "mobCount": null,
+          "reason": "세르니움 대표 인기 사냥터. 맵이 좁고 몬스터 밀집. 공략러 종합 1순위.",
+          "youtubeSearch": "세르니움+서쪽성벽+사냥"
+        }
+      ]
     },
     {
       "levelRange": "265~270",
@@ -55,7 +97,15 @@
       "area": "그란디스",
       "force": "70",
       "forceType": "어센틱포스",
-      "description": "인기 사냥터. 어센틱포스 70 이상 권장"
+      "description": "인기 사냥터. 어센틱포스 70 이상 권장",
+      "popularSpots": [
+        {
+          "map": "1층 로비",
+          "mobCount": null,
+          "reason": "넓은 맵+높은 마릿수. 265~270 최고 효율 구간.",
+          "youtubeSearch": "호텔아르크스+사냥터+추천"
+        }
+      ]
     },
     {
       "levelRange": "270~275",
@@ -63,7 +113,8 @@
       "area": "그란디스",
       "force": null,
       "forceType": "어센틱포스",
-      "description": "어센틱포스 지속 강화 필요"
+      "description": "어센틱포스 지속 강화 필요",
+      "popularSpots": null
     },
     {
       "levelRange": "275~280",
@@ -71,7 +122,8 @@
       "area": "그란디스",
       "force": null,
       "forceType": "어센틱포스",
-      "description": "어센틱포스 진행 중"
+      "description": "어센틱포스 진행 중",
+      "popularSpots": null
     },
     {
       "levelRange": "280~285",
@@ -79,7 +131,8 @@
       "area": "그란디스",
       "force": null,
       "forceType": "어센틱포스",
-      "description": "어센틱포스 후반부"
+      "description": "어센틱포스 후반부",
+      "popularSpots": null
     },
     {
       "levelRange": "285~290",
@@ -87,7 +140,8 @@
       "area": "그란디스",
       "force": null,
       "forceType": "어센틱포스",
-      "description": "어센틱포스 진행 중"
+      "description": "어센틱포스 진행 중",
+      "popularSpots": null
     },
     {
       "levelRange": "290~300+",
@@ -95,7 +149,8 @@
       "area": "그란디스",
       "force": "180",
       "forceType": "어센틱포스",
-      "description": "어센틱포스 180(완성) 목표. 최종 사냥터"
+      "description": "어센틱포스 180(완성) 목표. 최종 사냥터",
+      "popularSpots": null
     }
   ]
 }

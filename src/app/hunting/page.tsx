@@ -6,16 +6,21 @@ import huntingData from "@/data/hunting.json";
 const AREA_COLORS: Record<string, string> = {
   "버닝 이벤트": "#fbbf24",
   "아케인 리버": "#8b5cf6",
-  "그란디스": "#22c55e",
+  그란디스: "#22c55e",
 };
+
+type Spot = { map: string; mobCount: number | null; reason: string; youtubeSearch: string };
 
 export default function HuntingPage() {
   const [selectedLevel, setSelectedLevel] = useState<number | null>(null);
+  const [expandedZone, setExpandedZone] = useState<number | null>(null);
 
   const matchedZone = selectedLevel !== null
-    ? huntingData.zones.find((zone) => {
-        const [min, max] = zone.levelRange.replace("+", "~999").replace("~", "-").split("-").map((s) => parseInt(s) || 0);
-        return selectedLevel >= min && selectedLevel < (max || 999);
+    ? huntingData.zones.findIndex((zone) => {
+        const parts = zone.levelRange.replace("+", "~999").replace("~", "-").split("-");
+        const min = parseInt(parts[0]) || 0;
+        const max = parseInt(parts[1]) || 999;
+        return selectedLevel >= min && selectedLevel < max;
       })
     : null;
 
@@ -42,50 +47,110 @@ export default function HuntingPage() {
       {/* Hunting Zones */}
       <div className="space-y-3">
         {huntingData.zones.map((zone, i) => {
-          const isMatch = matchedZone === zone;
+          const isMatch = matchedZone === i;
           const areaColor = AREA_COLORS[zone.area] ?? "#9ca3af";
+          const isExpanded = expandedZone === i;
+          const spots = (zone.popularSpots as Spot[] | null) || [];
+
           return (
             <div
               key={i}
-              className={`p-4 rounded-xl border transition-all ${
+              className={`rounded-xl border transition-all overflow-hidden ${
                 isMatch
                   ? "border-[var(--accent-orange)] bg-[var(--accent-orange)]/5 ring-1 ring-[var(--accent-orange)]/30"
                   : "border-[var(--border)] bg-[var(--bg-card)]"
               }`}
             >
-              <div className="flex items-start justify-between gap-3">
-                <div className="flex-1">
-                  <div className="flex items-center gap-2 mb-1">
-                    <span className="text-lg font-bold">{zone.name}</span>
-                    {isMatch && (
-                      <span className="text-xs px-2 py-0.5 rounded-full bg-[var(--accent-orange)]/20 text-[var(--accent-orange)] font-bold">
-                        추천
+              <button
+                onClick={() => setExpandedZone(isExpanded ? null : i)}
+                className="w-full p-4 text-left"
+              >
+                <div className="flex items-start justify-between gap-3">
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className="text-lg font-bold">{zone.name}</span>
+                      {isMatch && (
+                        <span className="text-xs px-2 py-0.5 rounded-full bg-[var(--accent-orange)]/20 text-[var(--accent-orange)] font-bold">
+                          추천
+                        </span>
+                      )}
+                      {spots.length > 0 && (
+                        <span className="text-xs text-[var(--accent-green)]">
+                          인기 {spots.length}곳
+                        </span>
+                      )}
+                    </div>
+                    <p className="text-sm text-[var(--text-secondary)]">
+                      {zone.description}
+                    </p>
+                  </div>
+                  <div className="text-right shrink-0">
+                    <div className="text-sm font-bold text-[var(--accent-blue)]">
+                      Lv. {zone.levelRange}
+                    </div>
+                    <span
+                      className="text-xs px-2 py-0.5 rounded-full inline-block mt-1"
+                      style={{
+                        backgroundColor: `${areaColor}20`,
+                        color: areaColor,
+                      }}
+                    >
+                      {zone.area}
+                    </span>
+                  </div>
+                </div>
+                {zone.force && (
+                  <div className="mt-2 pt-2 border-t border-[var(--border)]">
+                    <span className="text-xs text-[var(--text-secondary)]">
+                      {zone.forceType}:{" "}
+                      <span className="font-bold text-[var(--text-primary)]">
+                        {zone.force}
                       </span>
-                    )}
+                    </span>
                   </div>
-                  <p className="text-sm text-[var(--text-secondary)]">{zone.description}</p>
-                </div>
-                <div className="text-right shrink-0">
-                  <div className="text-sm font-bold text-[var(--accent-blue)]">
-                    Lv. {zone.levelRange}
+                )}
+              </button>
+
+              {/* Expanded: Popular Spots */}
+              {isExpanded && spots.length > 0 && (
+                <div className="px-4 pb-4 space-y-2">
+                  <div className="text-xs font-bold text-[var(--accent-green)] mb-1">
+                    인기 사냥터
                   </div>
-                  <span
-                    className="text-xs px-2 py-0.5 rounded-full inline-block mt-1"
-                    style={{
-                      backgroundColor: `${areaColor}20`,
-                      color: areaColor,
-                    }}
-                  >
-                    {zone.area}
-                  </span>
+                  {spots.map((spot, j) => (
+                    <div
+                      key={j}
+                      className="p-3 rounded-lg bg-[var(--bg-secondary)]"
+                    >
+                      <div className="flex items-center justify-between mb-1">
+                        <span className="text-sm font-bold">{spot.map}</span>
+                        {spot.mobCount && (
+                          <span className="text-xs text-[var(--accent-blue)]">
+                            ~{spot.mobCount}마리/분
+                          </span>
+                        )}
+                      </div>
+                      <p className="text-xs text-[var(--text-secondary)] mb-2">
+                        {spot.reason}
+                      </p>
+                      <a
+                        href={`https://youtube.com/results?search_query=${spot.youtubeSearch}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs text-[var(--accent-blue)] hover:text-[var(--accent-orange)]"
+                      >
+                        유튜브에서 사냥 영상 검색 →
+                      </a>
+                    </div>
+                  ))}
                 </div>
-              </div>
-              {zone.force && (
-                <div className="mt-2 pt-2 border-t border-[var(--border)]">
-                  <span className="text-xs text-[var(--text-secondary)]">
-                    {zone.forceType}:{" "}
-                    <span className="font-bold text-[var(--text-primary)]">{zone.force}</span>
-                  </span>
+              )}
+
+              {isExpanded && spots.length === 0 && (
+                <div className="px-4 pb-4">
+                  <div className="p-3 rounded-lg bg-[var(--bg-secondary)] text-xs text-[var(--text-secondary)]">
+                    인기 사냥터 데이터 준비 중
+                  </div>
                 </div>
               )}
             </div>
