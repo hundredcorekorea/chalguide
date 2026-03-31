@@ -1,0 +1,71 @@
+{
+  "season": 3,
+  "resetDay": "목요일",
+  "resetTime": "00:00 KST",
+  "categories": [
+    {
+      "name": "사냥 미션",
+      "missions": [
+        {
+          "id": "hunt_daily",
+          "name": "몬스터 1,000마리 처치",
+          "reward": "챌린저스 코인 300개",
+          "points": null,
+          "frequency": "일일",
+          "maxPerDay": 1,
+          "maxPerWeek": 5,
+          "estimatedMinutes": 15,
+          "autoCompletePrice": 2000,
+          "autoCompleteCurrency": "메이플포인트"
+        }
+      ]
+    },
+    {
+      "name": "레벨 미션",
+      "missions": [
+        { "id": "level_260", "name": "260레벨 달성", "points": 3000, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_261", "name": "261레벨 달성", "points": 300, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_262", "name": "262레벨 달성", "points": 300, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_263", "name": "263레벨 달성", "points": 300, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_264", "name": "264레벨 달성", "points": 300, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_265", "name": "265레벨 달성", "points": 300, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_266", "name": "266레벨 달성", "points": 300, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_267", "name": "267레벨 달성", "points": 300, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_268", "name": "268레벨 달성", "points": 300, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_269", "name": "269레벨 달성", "points": 300, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_270", "name": "270레벨 달성", "points": 700, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_271", "name": "271레벨 달성", "points": 700, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_272", "name": "272레벨 달성", "points": 700, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_273", "name": "273레벨 달성", "points": 700, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_274", "name": "274레벨 달성", "points": 700, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_275", "name": "275레벨 달성", "points": 1000, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_276", "name": "276레벨 달성", "points": 1000, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_277", "name": "277레벨 달성", "points": 1000, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_278", "name": "278레벨 달성", "points": 1000, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_279", "name": "279레벨 달성", "points": 1000, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_280", "name": "280레벨 달성", "points": 1500, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_281", "name": "281레벨 달성", "points": 1500, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_282", "name": "282레벨 달성", "points": 1500, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_283", "name": "283레벨 달성", "points": 1500, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_284", "name": "284레벨 달성", "points": 1500, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_285", "name": "285레벨 달성", "points": 2000, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_286", "name": "286레벨 달성", "points": 2000, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_287", "name": "287레벨 달성", "points": 2000, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_288", "name": "288레벨 달성", "points": 2000, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_289", "name": "289레벨 달성", "points": 2000, "frequency": "1회성", "estimatedMinutes": null },
+        { "id": "level_290", "name": "290레벨 달성", "points": 5000, "frequency": "1회성", "estimatedMinutes": null }
+      ]
+    },
+    {
+      "name": "보스 미션",
+      "description": "1인 격파 기준. 전체 올클리어 시 약 101,300포인트",
+      "pointRules": [
+        { "difficulty": "이지", "points": 100 },
+        { "difficulty": "노멀", "points": 500 },
+        { "difficulty": "하드", "points": 1000 },
+        { "difficulty": "카오스", "points": 1000 },
+        { "difficulty": "익스트림", "points": 1000 }
+      ]
+    }
+  ]
+}

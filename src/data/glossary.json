@@ -1,0 +1,22 @@
+{
+  "terms": [
+    { "id": "apo", "slang": ["아포"], "official": "아케인포스", "description": "아케인 리버 지역 사냥에 필요한 전투력 수치. 부족하면 데미지 1만 고정.", "category": "스펙" },
+    { "id": "eopo", "slang": ["어포"], "official": "어센틱포스", "description": "그란디스 지역 사냥에 필요한 전투력 수치. 세르니움부터 필요.", "category": "스펙" },
+    { "id": "banbbalbyeol", "slang": ["반빨별"], "official": "반짝이는 파란 별 물약", "description": "스타포스 강화 시 파괴 방지. 비싸지만 안전.", "category": "아이템" },
+    { "id": "chosung", "slang": ["초성비"], "official": "초월자의 성장 비약", "description": "사용 즉시 대량 경험치 획득. 260~275 구간에 쓰면 효율적.", "category": "아이템" },
+    { "id": "seren18", "slang": ["세렌 18성"], "official": "선택받은 세렌 하드 18성", "description": "하드 세렌 보스를 스타포스 18성 장비로 도전한다는 뜻.", "category": "보스" },
+    { "id": "gilrajabi", "slang": ["길라잡이"], "official": "성장 길라잡이", "description": "복귀 유저용 튜토리얼 퀘스트. 완료 시 각종 보상 지급.", "category": "시스템" },
+    { "id": "ssalpi", "slang": ["쌀피엠", "쌀피"], "official": "분당 데미지 효율", "description": "1분 동안 넣을 수 있는 총 데미지. 사냥 효율의 핵심 지표.", "category": "스펙" },
+    { "id": "monpa", "slang": ["몬파"], "official": "몬스터파크", "description": "일일 경험치 던전. 일요일 1.5배 보너스.", "category": "콘텐츠" },
+    { "id": "gaensel", "slang": ["가엔슬"], "official": "가디언 엔젤 슬라임", "description": "주간 보스. 결정석 가성비 좋고, 가디언 엔젤 링 드롭.", "category": "보스" },
+    { "id": "irushid", "slang": ["이루시"], "official": "이지/루시드", "description": "루시드 보스 이지 난이도를 줄여 부른 말.", "category": "보스" },
+    { "id": "blkyu", "slang": ["블큐"], "official": "블랙 큐브", "description": "잠재능력을 재설정하는 아이템. 레전드리 등급까지 올릴 수 있음.", "category": "아이템" },
+    { "id": "hwaeq", "slang": ["화에큐"], "official": "화이트 에디셔널 큐브", "description": "에디셔널 잠재능력을 재설정하는 아이템.", "category": "아이템" },
+    { "id": "kogang", "slang": ["코강"], "official": "코어 강화", "description": "5차 전직 이후 스킬 코어를 강화하는 시스템.", "category": "스펙" },
+    { "id": "starforce", "slang": ["스타포스", "별"], "official": "스타포스 강화", "description": "장비를 별 단위로 강화. 실패 시 하락, 일정 확률 파괴.", "category": "시스템" },
+    { "id": "jubcha", "slang": ["주차"], "official": "주간 미션만 하고 접속 최소화", "description": "최소 노력으로 포인트를 모으는 플레이 스타일.", "category": "플레이" },
+    { "id": "haedong", "slang": ["냉동용사", "해동"], "official": "장기 미접속 후 복귀한 유저", "description": "오래 쉬다 돌아온 유저. 시스템이 많이 바뀌어서 적응 필요.", "category": "플레이" },
+    { "id": "gyeoljeong", "slang": ["결정석"], "official": "강렬한 힘의 결정", "description": "보스 처치 시 드롭. NPC에게 판매하여 메소 획득.", "category": "아이템" },
+    { "id": "haber", "slang": ["하버"], "official": "하이퍼 버닝", "description": "레벨업 시 추가 레벨을 얻는 이벤트. 200~260 구간 적용.", "category": "이벤트" }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "season": 3,
+  "seasonName": "CROWN",
+  "tiers": [
+    {
+      "id": "beginner",
+      "name": "비기너",
+      "score": 0,
+      "color": "#9ca3af",
+      "rewards": [],
+      "buffs": {
+        "exp": 50,
+        "att": 50,
+        "allStat": 50,
+        "bossDmg": 30,
+        "ied": 30,
+        "critRate": 30,
+        "normalDmg": 100
+      }
+    },
+    {
+      "id": "bronze",
+      "name": "브론즈",
+      "score": 5000,
+      "color": "#cd7f32",
+      "rewards": ["훈장", "휘장로이드", "솔 에르다 조각 100개"],
+      "buffs": {
+        "exp": 50,
+        "att": 55,
+        "allStat": 60,
+        "bossDmg": 40,
+        "ied": 40,
+        "critRate": 30,
+        "normalDmg": 100
+      }
+    },
+    {
+      "id": "silver",
+      "name": "실버",
+      "score": 10000,
+      "color": "#c0c0c0",
+      "rewards": ["훈장", "특수 스킬 반지 선택권"],
+      "buffs": {
+        "exp": 50,
+        "att": 60,
+        "allStat": 70,
+        "bossDmg": 50,
+        "ied": 50,
+        "critRate": 30,
+        "normalDmg": 100
+      }
+    },
+    {
+      "id": "gold",
+      "name": "골드",
+      "score": 15000,
+      "color": "#ffd700",
+      "rewards": ["훈장", "솔 에르다"],
+      "buffs": {
+        "exp": 50,
+        "att": 70,
+        "allStat": 90,
+        "bossDmg": 60,
+        "ied": 60,
+        "critRate": 30,
+        "normalDmg": 100
+      }
+    },
+    {
+      "id": "platinum",
+      "name": "플래티넘",
+      "score": 20000,
+      "color": "#7dd3fc",
+      "rewards": ["훈장", "솔 에르다 조각 300개"],
+      "buffs": {
+        "exp": 50,
+        "att": 80,
+        "allStat": 100,
+        "bossDmg": 70,
+        "ied": 70,
+        "critRate": 30,
+        "normalDmg": 100
+      }
+    },
+    {
+      "id": "emerald",
+      "name": "에메랄드",
+      "score": 30000,
+      "color": "#22c55e",
+      "rewards": ["블랙 큐브 30개", "유니온 성장 비약", "레전드리 잠재 스크롤"],
+      "buffs": {
+        "exp": 50,
+        "att": null,
+        "allStat": null,
+        "bossDmg": null,
+        "ied": null,
+        "critRate": 30,
+        "normalDmg": 150
+      }
+    },
+    {
+      "id": "diamond",
+      "name": "다이아몬드",
+      "score": 40000,
+      "color": "#60a5fa",
+      "rewards": ["레전드리 잠재 스크롤", "에디셔널 유니크 스크롤", "코지 윈터 세트"],
+      "buffs": {
+        "exp": 50,
+        "att": null,
+        "allStat": null,
+        "bossDmg": null,
+        "ied": null,
+        "critRate": 30,
+        "normalDmg": 150,
+        "mesoDrop": 20
+      }
+    },
+    {
+      "id": "master",
+      "name": "마스터",
+      "score": 65000,
+      "color": "#a78bfa",
+      "rewards": ["블랙 큐브 30개", "화이트 에디셔널 큐브 30개"],
+      "buffs": {}
+    },
+    {
+      "id": "challenger",
+      "name": "챌린저",
+      "score": 90000,
+      "color": "#f97316",
+      "rewards": ["챌린저 가구 교환권 (명예 보상)"],
+      "buffs": {}
+    }
+  ]
+}

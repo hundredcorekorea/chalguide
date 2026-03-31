@@ -1,0 +1,101 @@
+{
+  "season": 3,
+  "zones": [
+    {
+      "levelRange": "~200",
+      "name": "테라/하이퍼 버닝",
+      "area": "버닝 이벤트",
+      "force": null,
+      "forceType": null,
+      "description": "버닝 이벤트로 200레벨까지 빠르게 도달"
+    },
+    {
+      "levelRange": "200~210",
+      "name": "소멸의 여로",
+      "area": "아케인 리버",
+      "force": "30~45",
+      "forceType": "아케인포스",
+      "description": "200레벨 첫 진입 지역. 아케인포스 확보 시작"
+    },
+    {
+      "levelRange": "210~220",
+      "name": "아르카나 / 츄츄 아일랜드",
+      "area": "아케인 리버",
+      "force": "45",
+      "forceType": "아케인포스",
+      "description": "아케인포스 45 이상 권장. 경험치 효율 높음"
+    },
+    {
+      "levelRange": "220~240",
+      "name": "아르카나 / 모라스",
+      "area": "아케인 리버",
+      "force": "45",
+      "forceType": "아케인포스",
+      "description": "아르카나에서 모라스로 전환. 아케인포스 꾸준히 강화"
+    },
+    {
+      "levelRange": "240~260",
+      "name": "에스페라 / 문브릿지 / 리멘",
+      "area": "아케인 리버",
+      "force": "90",
+      "forceType": "아케인포스",
+      "description": "아케인포스 90(완성) 목표. 그란디스 전환 준비"
+    },
+    {
+      "levelRange": "260~265",
+      "name": "세르니움",
+      "area": "그란디스",
+      "force": "30",
+      "forceType": "어센틱포스",
+      "description": "그란디스 첫 진입. 어센틱포스 수집 시작"
+    },
+    {
+      "levelRange": "265~270",
+      "name": "호텔 아르크스",
+      "area": "그란디스",
+      "force": "70",
+      "forceType": "어센틱포스",
+      "description": "인기 사냥터. 어센틱포스 70 이상 권장"
+    },
+    {
+      "levelRange": "270~275",
+      "name": "오디움",
+      "area": "그란디스",
+      "force": null,
+      "forceType": "어센틱포스",
+      "description": "어센틱포스 지속 강화 필요"
+    },
+    {
+      "levelRange": "275~280",
+      "name": "도원경",
+      "area": "그란디스",
+      "force": null,
+      "forceType": "어센틱포스",
+      "description": "어센틱포스 진행 중"
+    },
+    {
+      "levelRange": "280~285",
+      "name": "아르테리아",
+      "area": "그란디스",
+      "force": null,
+      "forceType": "어센틱포스",
+      "description": "어센틱포스 후반부"
+    },
+    {
+      "levelRange": "285~290",
+      "name": "카르시온",
+      "area": "그란디스",
+      "force": null,
+      "forceType": "어센틱포스",
+      "description": "어센틱포스 진행 중"
+    },
+    {
+      "levelRange": "290~300+",
+      "name": "탈라하트 / 기어드락",
+      "area": "그란디스",
+      "force": "180",
+      "forceType": "어센틱포스",
+      "description": "어센틱포스 180(완성) 목표. 최종 사냥터"
+    }
+  ]
+}

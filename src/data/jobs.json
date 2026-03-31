@@ -1,0 +1,487 @@
+{
+  "season": 3,
+  "seasonName": "CROWN",
+  "lastUpdated": "2026-04-01",
+  "minimumSources": 5,
+  "sourceRule": "직업 추천은 최소 5개 소스 교차 검증 필수. 가장 민감한 데이터.",
+  "verificationStatus": "메이플지지 316만건 실측 점유율 + 커뮤니티 교차. 시즌4 전 추가 검증 필요.",
+  "ratingSystem": "별점 5점 만점. 사냥/보스/난이도(쉬울수록 높음)/뉴비추천 각각 평가.",
+  "dataSource": {
+    "occupancy": "메이플지지 (maple.gg) 316만건 표본",
+    "skills": "정심심 블로그 (matsu1207.tistory.com) 47직업 하이퍼/어빌/코강",
+    "community": "인벤/에펨/아카/디시 교차",
+    "stats": "츄츄지지 (chuchu.gg)"
+  },
+  "jobs": [
+    {
+      "id": "ren", "name": "렌", "class": "궁수", "occupancyRank": 1, "occupancy": 13.99,
+      "hunting": 4, "bossing": 5, "easyToPlay": 5, "overall": 5, "newbieRating": 5,
+      "tags": ["보스형", "뉴비추천"],
+      "pros": ["시즌3 신규 직업", "저난도인데 보스 성능 우수", "하이퍼 버닝 대상", "점유율 압도적 1위"],
+      "cons": ["신규라 공략 자료 상대적 부족"],
+      "oneLiner": "챌섭 점유율 1위 (14%). 쉽고 보스 강력. 하버 대상.",
+      "newbieTip": "하이퍼 버닝 대상. 쉬운 조작으로 보스 성능이 뛰어나서 뉴비가 잡아도 바로 활약. 시즌 신규라 다 같이 처음부터!",
+      "newbieWarning": null
+    },
+    {
+      "id": "eunwol", "name": "은월", "class": "해적", "occupancyRank": 2, "occupancy": 4.96,
+      "hunting": 4, "bossing": 5, "easyToPlay": 4, "overall": 5, "newbieRating": 4,
+      "tags": ["보스형", "뉴비추천"],
+      "pros": ["보스 성능 최상위", "생존기 강력", "점유율 2위"],
+      "cons": ["사냥이 보마보다 살짝 느림"],
+      "oneLiner": "보스 특화. 점유율 2위가 증명하는 성능.",
+      "newbieTip": "보스 잡는 재미를 원한다면 은월. 생존기가 강해서 죽기 어렵고, 보스전에서 안정적.",
+      "newbieWarning": "사냥 속도가 보마보다 느려서 레벨링이 살짝 답답할 수 있음."
+    },
+    {
+      "id": "bowmaster", "name": "보우마스터", "class": "궁수", "occupancyRank": 3, "occupancy": 4.25,
+      "hunting": 5, "bossing": 4, "easyToPlay": 5, "overall": 5, "newbieRating": 5,
+      "tags": ["사냥형", "보스형", "뉴비추천"],
+      "pros": ["저난도 국밥 직업", "사냥+보스 둘 다 안정적", "점유율 3위"],
+      "cons": ["회복 봉인 보스에서 안정성 하락"],
+      "oneLiner": "뭘 키울지 모르면 보마. 사냥+보스 둘 다 편안.",
+      "newbieTip": "메이플 처음이거나 10년 만에 복귀했다면 보마. 스킬 하나로 사냥되고, 조작이 단순해서 시스템 적응에 집중 가능.",
+      "newbieWarning": null
+    },
+    {
+      "id": "windbreaker", "name": "윈드브레이커", "class": "궁수", "occupancyRank": 4, "occupancy": 3.56,
+      "hunting": 4, "bossing": 4, "easyToPlay": 4, "overall": 4, "newbieRating": 4,
+      "tags": ["사냥형", "보스형", "뉴비추천"],
+      "pros": ["안정적 성능", "사냥 편함", "점유율 4위"],
+      "cons": ["크게 돌출된 강점 없음"],
+      "oneLiner": "궁수 계열 안정파. 보마와 비슷한 편안함.",
+      "newbieTip": "보마와 비슷한 포지션. 궁수 하고 싶은데 보마가 안 끌리면 윈브.",
+      "newbieWarning": null
+    },
+    {
+      "id": "adele", "name": "아델", "class": "전사", "occupancyRank": 5, "occupancy": 3.28,
+      "hunting": 5, "bossing": 4, "easyToPlay": 5, "overall": 5, "newbieRating": 5,
+      "tags": ["사냥형", "보스형", "뉴비추천"],
+      "pros": ["넓은 범위 스킬", "높은 DPS", "직관적 조작"],
+      "cons": ["전사 장비 가격이 타 계열 대비 비쌈"],
+      "oneLiner": "범위 넓고 딜 강력. 전사 하고 싶으면 아델.",
+      "newbieTip": "전사 계열 1픽. 검 휘두르면 알아서 다 쓸어버리는 시원한 사냥. 초보자도 쉽게 적응.",
+      "newbieWarning": "챌섭은 거래 불가라 장비 파밍을 직접 해야 함. 전사 장비 드롭 경쟁 있을 수 있음."
+    },
+    {
+      "id": "bishop", "name": "비숍", "class": "마법사", "occupancyRank": 6, "occupancy": 3.22,
+      "hunting": 3, "bossing": 2, "easyToPlay": 4, "overall": 3, "newbieRating": 2,
+      "tags": ["유틸형"],
+      "pros": ["힐러", "홀리심볼 경험치 버프", "점유율 6위 (의외로 높음)"],
+      "cons": ["챌섭은 솔플 위주라 유틸 가치 낮음", "밸패 이후 성능 하락"],
+      "oneLiner": "점유율은 높지만 챌섭 솔플에선 성능 애매.",
+      "newbieTip": null,
+      "newbieWarning": "옛날엔 '비숍 없으면 파티 안 됨'이었지만, 챌린저스는 솔플 위주. 옛날 기억으로 비숍 잡으면 후회할 수 있음."
+    },
+    {
+      "id": "suncold", "name": "아크메이지(썬,콜)", "class": "마법사", "occupancyRank": 7, "occupancy": 3.18,
+      "hunting": 5, "bossing": 4, "easyToPlay": 5, "overall": 5, "newbieRating": 5,
+      "tags": ["사냥형", "뉴비추천"],
+      "pros": ["텔포 이동 편함", "쌀피엠 매력적", "부캐 국밥"],
+      "cons": ["보스 딜이 은월/일리움 급은 아님"],
+      "oneLiner": "편하게 사냥하고 싶으면 썬콜. 텔포의 신.",
+      "newbieTip": "마법사 하고 싶다면 썬콜이 정답. 텔레포트로 맵 이동이 빠르고, 스킬 누르기만 하면 사냥 끝. 옛날 '아이스 라이트닝' 느낌 그대로.",
+      "newbieWarning": null
+    },
+    {
+      "id": "wildhunter", "name": "와일드헌터", "class": "궁수", "occupancyRank": 8, "occupancy": 3.11,
+      "hunting": 5, "bossing": 3, "easyToPlay": 4, "overall": 4, "newbieRating": 4,
+      "tags": ["사냥형", "뉴비추천"],
+      "pros": ["재규어 탑승 사냥 편함", "이동하면서 공격 가능"],
+      "cons": ["보스 성능 평범"],
+      "oneLiner": "재규어 타고 달리면서 사냥. 편하고 빠름.",
+      "newbieTip": "재규어 위에서 이동하면서 공격하는 독특한 플레이. 사냥이 편해서 레벨링 스트레스 적음.",
+      "newbieWarning": null
+    },
+    {
+      "id": "soulmaster", "name": "소울마스터", "class": "전사", "occupancyRank": 9, "occupancy": 2.80,
+      "hunting": 4, "bossing": 4, "easyToPlay": 4, "overall": 4, "newbieRating": 3,
+      "tags": ["사냥형", "보스형"],
+      "pros": ["안정적 밸런스", "전사 중 조작 편한 편"],
+      "cons": ["돌출된 강점 없음"],
+      "oneLiner": "전사 올라운더. 무난하게 잘함.",
+      "newbieTip": "전사 중 편한 축. 아델이 부담이면 소울마스터도 좋은 선택.",
+      "newbieWarning": null
+    },
+    {
+      "id": "shadower", "name": "섀도어", "class": "도적", "occupancyRank": 10, "occupancy": 2.77,
+      "hunting": 4, "bossing": 4, "easyToPlay": 3, "overall": 4, "newbieRating": 3,
+      "tags": ["보스형", "사냥형"],
+      "pros": ["메소 드롭 증가 스킬", "보스전 안정적"],
+      "cons": ["도적 특유의 조작감 적응 필요"],
+      "oneLiner": "메소 파밍+보스 둘 다. 도적 하고 싶으면 섀도어.",
+      "newbieTip": null,
+      "newbieWarning": "도적 계열은 근접 전투라 보스에서 피격 위험. 회피 패턴 익혀야 함."
+    },
+    {
+      "id": "kinesis", "name": "키네시스", "class": "마법사", "occupancyRank": 11, "occupancy": 2.75,
+      "hunting": 3, "bossing": 5, "easyToPlay": 3, "overall": 4, "newbieRating": 2,
+      "tags": ["보스형"],
+      "pros": ["보스 강력", "기반 없이도 가능"],
+      "cons": ["조작 난이도 있음", "사냥 편의성 낮음"],
+      "oneLiner": "보스 잡는 맛. 기반 없이도 되는 게 챌섭 강점.",
+      "newbieTip": null,
+      "newbieWarning": "조작할 게 많아서 처음엔 멘붕 올 수 있음. 시스템 먼저 익히고 나서 도전 추천."
+    },
+    {
+      "id": "mercedes", "name": "메르세데스", "class": "궁수", "occupancyRank": 12, "occupancy": 2.74,
+      "hunting": 4, "bossing": 3, "easyToPlay": 3, "overall": 3, "newbieRating": 2,
+      "tags": ["사냥형"],
+      "pros": ["기동성 최상위", "스타일리시한 전투"],
+      "cons": ["보스 성능 평범", "콤보 연결 조작 난이도"],
+      "oneLiner": "이동속도 깡패. 컨트롤 자신 있으면.",
+      "newbieTip": null,
+      "newbieWarning": "콤보 연결이 핵심이라 처음엔 어려울 수 있음."
+    },
+    {
+      "id": "nightlord", "name": "나이트로드", "class": "도적", "occupancyRank": 13, "occupancy": 2.71,
+      "hunting": 3, "bossing": 5, "easyToPlay": 3, "overall": 4, "newbieRating": 3,
+      "tags": ["보스형"],
+      "pros": ["보스 딜링 최상위급", "원거리라 안전"],
+      "cons": ["사냥 범위 좁음", "표창 소모품 관리"],
+      "oneLiner": "보스 딜러. 원거리 도적의 정석.",
+      "newbieTip": "보스전에서 원거리로 안전하게 딜 가능. 단 사냥은 좀 느림.",
+      "newbieWarning": null
+    },
+    {
+      "id": "demonavenger", "name": "데몬어벤져", "class": "전사", "occupancyRank": 14, "occupancy": 2.61,
+      "hunting": 4, "bossing": 3, "easyToPlay": 4, "overall": 3, "newbieRating": 3,
+      "tags": ["사냥형"],
+      "pros": ["HP 기반 독특한 시스템", "사냥 편함"],
+      "cons": ["보스 성능 평범", "HP 잠재 세팅 독특"],
+      "oneLiner": "HP 기반 전사. 독특한 시스템이 재밌으면 추천.",
+      "newbieTip": null,
+      "newbieWarning": "HP 기반이라 다른 직업과 장비 세팅이 완전 다름. 가이드 없이 하면 헤맴."
+    },
+    {
+      "id": "viper", "name": "바이퍼", "class": "해적", "occupancyRank": 15, "occupancy": 2.54,
+      "hunting": 4, "bossing": 4, "easyToPlay": 4, "overall": 4, "newbieRating": 3,
+      "tags": ["사냥형", "보스형"],
+      "pros": ["밸런스 좋음", "사냥+보스 둘 다 무난"],
+      "cons": ["돌출된 강점 없음"],
+      "oneLiner": "해적 올라운더. 무난하게 잘함.",
+      "newbieTip": "해적 하고 싶으면 바이퍼도 괜찮은 선택. 밸런스 좋음.",
+      "newbieWarning": null
+    },
+    {
+      "id": "nightwalker", "name": "나이트워커", "class": "도적", "occupancyRank": 16, "occupancy": 2.54,
+      "hunting": 4, "bossing": 5, "easyToPlay": 2, "overall": 4, "newbieRating": 1,
+      "tags": ["보스형"],
+      "pros": ["고점 매우 높음", "보스 성능 최상위급"],
+      "cons": ["해방전까지 어려움", "고난도 조작"],
+      "oneLiner": "고점 최강이지만 난이도도 최강.",
+      "newbieTip": null,
+      "newbieWarning": "숙련되면 최강이지만 그 전까진 고통. 뉴비에겐 절대 비추."
+    },
+    {
+      "id": "angelicbuster", "name": "엔젤릭버스터", "class": "해적", "occupancyRank": 17, "occupancy": 2.43,
+      "hunting": 4, "bossing": 4, "easyToPlay": 4, "overall": 4, "newbieRating": 3,
+      "tags": ["사냥형", "보스형"],
+      "pros": ["화려한 이펙트", "사냥+보스 밸런스"],
+      "cons": ["소울 시커 의존도"],
+      "oneLiner": "화려하고 밸런스 좋음. 해적 입문용.",
+      "newbieTip": "화려한 연출 좋아하면 엔버. 사냥+보스 둘 다 무난.",
+      "newbieWarning": null
+    },
+    {
+      "id": "dualblade", "name": "듀얼블레이더", "class": "도적", "occupancyRank": 18, "occupancy": 2.36,
+      "hunting": 4, "bossing": 4, "easyToPlay": 3, "overall": 4, "newbieRating": 3,
+      "tags": ["보스형", "사냥형"],
+      "pros": ["회피 스킬 풍부", "보스전 생존력"],
+      "cons": ["근접 도적이라 피격 위험"],
+      "oneLiner": "회피의 달인. 보스전 생존력 좋음.",
+      "newbieTip": null,
+      "newbieWarning": "근접 전투. 보스 패턴 익숙해져야 진가 발휘."
+    },
+    {
+      "id": "hero", "name": "히어로", "class": "전사", "occupancyRank": 19, "occupancy": 2.14,
+      "hunting": 3, "bossing": 4, "easyToPlay": 4, "overall": 3, "newbieRating": 3,
+      "tags": ["보스형"],
+      "pros": ["단순한 조작", "콤보 어택 한방 딜"],
+      "cons": ["사냥 범위 좁음"],
+      "oneLiner": "한방에 승부. 단순하지만 묵직한 전사.",
+      "newbieTip": "조작 단순해서 쉽게 적응 가능. 단 사냥이 좀 느림.",
+      "newbieWarning": null
+    },
+    {
+      "id": "firepoison", "name": "아크메이지(불,독)", "class": "마법사", "occupancyRank": 20, "occupancy": 2.11,
+      "hunting": 4, "bossing": 4, "easyToPlay": 4, "overall": 4, "newbieRating": 3,
+      "tags": ["사냥형", "보스형"],
+      "pros": ["도트 데미지 강력", "사냥 효율 좋음"],
+      "cons": ["썬콜 대비 약간 복잡"],
+      "oneLiner": "불독. 도트 데미지로 녹여버리는 마법사.",
+      "newbieTip": "썬콜과 비슷하지만 도트(지속 피해) 위주. 마법사 중 두 번째 선택지.",
+      "newbieWarning": null
+    },
+    {
+      "id": "aran", "name": "아란", "class": "전사", "occupancyRank": 21, "occupancy": 2.11,
+      "hunting": 5, "bossing": 3, "easyToPlay": 4, "overall": 4, "newbieRating": 4,
+      "tags": ["사냥형", "뉴비추천"],
+      "pros": ["사냥 편함", "커맨드 입력 액션감"],
+      "cons": ["보스 성능은 평범"],
+      "oneLiner": "사냥 국밥. 커맨드 입력이 액션게임 느낌.",
+      "newbieTip": "전사 하고 싶으면 아란. 커맨드로 스킬 쓰는 게 액션게임 느낌. 사냥이 시원시원.",
+      "newbieWarning": "보스전에서는 밋밋할 수 있음."
+    },
+    {
+      "id": "paladin", "name": "팔라딘", "class": "전사", "occupancyRank": 22, "occupancy": 1.68,
+      "hunting": 3, "bossing": 3, "easyToPlay": 5, "overall": 3, "newbieRating": 3,
+      "tags": ["유틸형"],
+      "pros": ["절대 안 죽음 (생존 최강)", "파티 유틸"],
+      "cons": ["딜이 낮음", "사냥 느림"],
+      "oneLiner": "안 죽는 전사. 딜은 포기.",
+      "newbieTip": "죽는 게 싫으면 팔라딘. 생존력은 전 직업 최강급. 단 딜은 낮음.",
+      "newbieWarning": null
+    },
+    {
+      "id": "zero", "name": "제로", "class": "전사", "occupancyRank": 23, "occupancy": 1.55,
+      "hunting": 4, "bossing": 4, "easyToPlay": 3, "overall": 4, "newbieRating": 3,
+      "tags": ["사냥형", "보스형"],
+      "pros": ["자체 무기 성장", "태그 시스템 독특"],
+      "cons": ["조작 복잡", "태그 적응 필요"],
+      "oneLiner": "무기 강화 부담 제로. 태그 전환이 매력.",
+      "newbieTip": "무기 강화가 뭔지 모르겠으면 오히려 제로가 편할 수 있음. 자체 무기가 알아서 성장.",
+      "newbieWarning": "알파/베타 태그 전환에 적응 필요. 처음엔 혼란스러울 수 있음."
+    },
+    {
+      "id": "illium", "name": "일리움", "class": "마법사", "occupancyRank": 24, "occupancy": 1.52,
+      "hunting": 4, "bossing": 5, "easyToPlay": 3, "overall": 5, "newbieRating": 3,
+      "tags": ["보스형", "사냥형"],
+      "pros": ["보스 성능 최상위급", "비행 기동성"],
+      "cons": ["원킬컷 높아 저스펙 초반 사냥 고통", "난이도 중간"],
+      "oneLiner": "보스 최강이지만 원킬컷 높아서 초반이 고비.",
+      "newbieTip": "보스전 성능은 확실. 다만 초반 사냥이 좀 힘들어도 버티면 후반에 보상받음.",
+      "newbieWarning": "'보마/렌처럼 쉬울 거야' 하고 잡으면 초반 사냥에서 멘붕 올 수 있음."
+    },
+    {
+      "id": "lara", "name": "라라", "class": "마법사", "occupancyRank": 25, "occupancy": 1.48,
+      "hunting": 4, "bossing": 3, "easyToPlay": 4, "overall": 3, "newbieRating": 3,
+      "tags": ["사냥형"],
+      "pros": ["편안한 사냥", "힐링 있음"],
+      "cons": ["보스 성능 평범"],
+      "oneLiner": "편안한 마법사. 힐도 되고 사냥도 OK.",
+      "newbieTip": "편하게 사냥하고 싶으면 라라도 괜찮음. 자체 힐이 있어서 생존력 좋음.",
+      "newbieWarning": null
+    },
+    {
+      "id": "phantom", "name": "팬텀", "class": "도적", "occupancyRank": 26, "occupancy": 1.44,
+      "hunting": 3, "bossing": 3, "easyToPlay": 2, "overall": 3, "newbieRating": 1,
+      "tags": [],
+      "pros": ["다른 직업 스킬 훔치기", "독특한 플레이"],
+      "cons": ["스킬 조합 복잡", "순수 성능 낮음"],
+      "oneLiner": "스킬 훔치기 로맨스. 근데 성능은 글쎄.",
+      "newbieTip": null,
+      "newbieWarning": "훔칠 스킬 조합을 알아야 하는데, 뉴비가 이걸 판단하기 어려움. 비추."
+    },
+    {
+      "id": "captain", "name": "캡틴", "class": "해적", "occupancyRank": 27, "occupancy": 1.38,
+      "hunting": 4, "bossing": 3, "easyToPlay": 4, "overall": 3, "newbieRating": 3,
+      "tags": ["사냥형"],
+      "pros": ["소환수 활용 사냥", "편한 조작"],
+      "cons": ["보스 딜 평범"],
+      "oneLiner": "소환수 띄워놓고 편하게. 부캐용 OK.",
+      "newbieTip": "소환수가 알아서 싸워줘서 편함. 단 보스에서는 큰 재미 없음.",
+      "newbieWarning": null
+    },
+    {
+      "id": "xenon", "name": "제논", "class": "도적/해적", "occupancyRank": 28, "occupancy": 1.35,
+      "hunting": 4, "bossing": 3, "easyToPlay": 3, "overall": 3, "newbieRating": 1,
+      "tags": ["사냥형"],
+      "pros": ["올스탯 사용", "독특한 시스템"],
+      "cons": ["템 세팅이 매우 복잡", "올스탯 잠재 비쌈"],
+      "oneLiner": "올스탯이라 독특하지만 세팅이 지옥.",
+      "newbieTip": null,
+      "newbieWarning": "3개 스탯을 동시에 맞춰야 해서 장비 세팅이 다른 직업의 3배 복잡. 뉴비 절대 비추."
+    },
+    {
+      "id": "darkknight", "name": "다크나이트", "class": "전사", "occupancyRank": 29, "occupancy": 1.35,
+      "hunting": 3, "bossing": 4, "easyToPlay": 4, "overall": 3, "newbieRating": 3,
+      "tags": ["보스형"],
+      "pros": ["부활 스킬", "보스전 안정적"],
+      "cons": ["사냥 느림"],
+      "oneLiner": "죽어도 살아남. 보스전 안정파.",
+      "newbieTip": "부활 스킬이 있어서 보스에서 한 번 더 버틸 수 있음.",
+      "newbieWarning": null
+    },
+    {
+      "id": "pathfinder", "name": "패스파인더", "class": "궁수", "occupancyRank": 30, "occupancy": 1.28,
+      "hunting": 4, "bossing": 3, "easyToPlay": 5, "overall": 3, "newbieRating": 4,
+      "tags": ["사냥형", "뉴비추천"],
+      "pros": ["극도로 간단한 조작", "넓은 범위"],
+      "cons": ["보스 성능 평범"],
+      "oneLiner": "버튼 하나로 사냥. 가장 심플한 궁수.",
+      "newbieTip": "조작이 가장 심플한 직업 중 하나. 사냥 입문용으로 최적.",
+      "newbieWarning": "보스에서는 재미 없을 수 있음."
+    },
+    {
+      "id": "khali", "name": "칼리", "class": "도적", "occupancyRank": 31, "occupancy": 1.14,
+      "hunting": 4, "bossing": 4, "easyToPlay": 3, "overall": 3, "newbieRating": 2,
+      "tags": ["보스형"],
+      "pros": ["럭 장비 저렴", "보스 성능 괜찮음"],
+      "cons": ["고점 뽑기 난이도 높음"],
+      "oneLiner": "럭 장비 싸서 세팅 부담 적음.",
+      "newbieTip": null,
+      "newbieWarning": "잘 다루려면 연습 필요."
+    },
+    {
+      "id": "marksman", "name": "신궁", "class": "궁수", "occupancyRank": 32, "occupancy": 1.14,
+      "hunting": 3, "bossing": 4, "easyToPlay": 4, "overall": 3, "newbieRating": 3,
+      "tags": ["보스형"],
+      "pros": ["먼 거리에서 안전한 딜", "단순한 조작"],
+      "cons": ["사냥 범위 좁음"],
+      "oneLiner": "원거리 저격수. 보스전 안전하게 딜.",
+      "newbieTip": null,
+      "newbieWarning": null
+    },
+    {
+      "id": "battlemage", "name": "배틀메이지", "class": "마법사", "occupancyRank": 33, "occupancy": 1.13,
+      "hunting": 3, "bossing": 3, "easyToPlay": 3, "overall": 3, "newbieRating": 2,
+      "tags": [],
+      "pros": ["근접 마법사 독특한 플레이"],
+      "cons": ["사냥 귀찮음", "성능 평범"],
+      "oneLiner": "근접 마법사. 독특하지만 성능은 글쎄.",
+      "newbieTip": null,
+      "newbieWarning": "마법사인데 근접 전투. 일반적인 마법사 기대하면 안 됨."
+    },
+    {
+      "id": "ark", "name": "아크", "class": "해적", "occupancyRank": 34, "occupancy": 1.08,
+      "hunting": 4, "bossing": 4, "easyToPlay": 3, "overall": 4, "newbieRating": 3,
+      "tags": ["사냥형", "보스형"],
+      "pros": ["사냥+보스 둘 다 잘함", "높은 기동성"],
+      "cons": ["스펠불릿 관리 필요"],
+      "oneLiner": "만능형 해적. 사냥+보스 밸런스.",
+      "newbieTip": "사냥과 보스 둘 다 잘하는 만능형. 단 조작에 약간 익숙해져야 함.",
+      "newbieWarning": null
+    },
+    {
+      "id": "striker", "name": "스트라이커", "class": "해적", "occupancyRank": 35, "occupancy": 1.07,
+      "hunting": 4, "bossing": 4, "easyToPlay": 4, "overall": 4, "newbieRating": 4,
+      "tags": ["보스형", "사냥형", "뉴비추천"],
+      "pros": ["보스 성능 우수", "안정적 밸런스"],
+      "cons": ["돌출된 강점은 없음"],
+      "oneLiner": "무난하게 잘하는 올라운더.",
+      "newbieTip": "해적 계열 하고 싶으면 스트라이커. 사냥도 보스도 무난하게 잘함.",
+      "newbieWarning": null
+    },
+    {
+      "id": "kaiser", "name": "카이저", "class": "전사", "occupancyRank": 36, "occupancy": 1.04,
+      "hunting": 4, "bossing": 4, "easyToPlay": 3, "overall": 3, "newbieRating": 3,
+      "tags": ["보스형"],
+      "pros": ["변신 시스템", "보스전 폭딜"],
+      "cons": ["변신 게이지 관리 필요"],
+      "oneLiner": "용으로 변신해서 폭딜. 변신이 매력.",
+      "newbieTip": null,
+      "newbieWarning": null
+    },
+    {
+      "id": "kain", "name": "카인", "class": "궁수", "occupancyRank": 37, "occupancy": 1.01,
+      "hunting": 5, "bossing": 3, "easyToPlay": 4, "overall": 3, "newbieRating": 3,
+      "tags": ["사냥형"],
+      "pros": ["빠른 이동속도", "넓은 공격 범위"],
+      "cons": ["보스 성능 아쉬움"],
+      "oneLiner": "빠르고 넓게. 사냥 특화 궁수.",
+      "newbieTip": null,
+      "newbieWarning": null
+    },
+    {
+      "id": "hoyoung", "name": "호영", "class": "도적", "occupancyRank": 38, "occupancy": 0.99,
+      "hunting": 5, "bossing": 3, "easyToPlay": 3, "overall": 4, "newbieRating": 2,
+      "tags": ["사냥형"],
+      "pros": ["최상위 사냥 효율", "분신 활용"],
+      "cons": ["게이지 관리 복잡", "보스 평범"],
+      "oneLiner": "사냥 최강급. 근데 게이지 관리가 핵심.",
+      "newbieTip": null,
+      "newbieWarning": "사냥은 최강이지만 부적/선기/환영 게이지 관리가 복잡. 적응에 시간 필요."
+    },
+    {
+      "id": "luminous", "name": "루미너스", "class": "마법사", "occupancyRank": 39, "occupancy": 0.84,
+      "hunting": 4, "bossing": 3, "easyToPlay": 4, "overall": 3, "newbieRating": 3,
+      "tags": ["사냥형"],
+      "pros": ["빛/어둠 전환 독특", "사냥 편함"],
+      "cons": ["보스 성능 평범", "이퀄리브리엄 타이밍"],
+      "oneLiner": "빛과 어둠의 마법사. 사냥 편하지만 보스 아쉬움.",
+      "newbieTip": null,
+      "newbieWarning": null
+    },
+    {
+      "id": "evan", "name": "에반", "class": "마법사", "occupancyRank": 40, "occupancy": 0.80,
+      "hunting": 3, "bossing": 3, "easyToPlay": 2, "overall": 2, "newbieRating": 1,
+      "tags": [],
+      "pros": ["미르 활용 독특한 플레이"],
+      "cons": ["키 조작 과다", "부캐로 피로감"],
+      "oneLiner": "키 누를 게 너무 많음. 챌섭 비추.",
+      "newbieTip": null,
+      "newbieWarning": "용(미르)과 동시 조작. 일반 마법사 상상하고 잡으면 멘붕."
+    },
+    {
+      "id": "cannonmaster", "name": "캐논마스터", "class": "해적", "occupancyRank": 41, "occupancy": 0.80,
+      "hunting": 4, "bossing": 3, "easyToPlay": 4, "overall": 3, "newbieRating": 3,
+      "tags": ["사냥형"],
+      "pros": ["넓은 범위", "편한 사냥"],
+      "cons": ["보스 성능 아쉬움"],
+      "oneLiner": "대포 들고 사냥. 범위 넓고 편함.",
+      "newbieTip": null,
+      "newbieWarning": null
+    },
+    {
+      "id": "demonslayer", "name": "데몬슬레이어", "class": "전사", "occupancyRank": 42, "occupancy": 0.79,
+      "hunting": 4, "bossing": 3, "easyToPlay": 4, "overall": 3, "newbieRating": 3,
+      "tags": ["사냥형"],
+      "pros": ["MP 불필요 (포스 사용)", "안정적 사냥"],
+      "cons": ["보스 성능 평범"],
+      "oneLiner": "MP 대신 포스. 물약 부담 없는 안정적 전사.",
+      "newbieTip": "MP 대신 포스를 써서 물약 부담 제로. 안정적.",
+      "newbieWarning": null
+    },
+    {
+      "id": "mechanic", "name": "메카닉", "class": "해적", "occupancyRank": 43, "occupancy": 0.73,
+      "hunting": 4, "bossing": 3, "easyToPlay": 3, "overall": 3, "newbieRating": 2,
+      "tags": ["사냥형"],
+      "pros": ["로봇 소환 독특", "설치형 사냥"],
+      "cons": ["보스 성능 낮음", "로봇 관리 번거로움"],
+      "oneLiner": "로봇 깔아놓고 사냥. 독특하지만 보스 아쉬움.",
+      "newbieTip": null,
+      "newbieWarning": null
+    },
+    {
+      "id": "mihile", "name": "미하일", "class": "전사", "occupancyRank": 44, "occupancy": 0.64,
+      "hunting": 3, "bossing": 3, "easyToPlay": 3, "overall": 2, "newbieRating": 2,
+      "tags": [],
+      "pros": ["가드 시스템"],
+      "cons": ["전반적 성능 하위권"],
+      "oneLiner": "가드가 독특하지만 성능이 아쉬움.",
+      "newbieTip": null,
+      "newbieWarning": "점유율 44위. 성능이 아쉬워서 비추."
+    },
+    {
+      "id": "cadena", "name": "카데나", "class": "도적", "occupancyRank": 45, "occupancy": 0.61,
+      "hunting": 3, "bossing": 4, "easyToPlay": 1, "overall": 2, "newbieRating": 1,
+      "tags": ["보스형"],
+      "pros": ["고점 매우 높음", "조작 재미"],
+      "cons": ["최고 난이도", "부캐로 부적합"],
+      "oneLiner": "컨트롤 자신 있어도 챌섭에선 비추.",
+      "newbieTip": null,
+      "newbieWarning": "전 직업 중 가장 어려운 축. 처음이라면 절대 비추."
+    },
+    {
+      "id": "flamewizard", "name": "플레임위자드", "class": "마법사", "occupancyRank": 46, "occupancy": 0.58,
+      "hunting": 3, "bossing": 3, "easyToPlay": 3, "overall": 2, "newbieRating": 2,
+      "tags": [],
+      "pros": ["불꽃 궤도 독특"],
+      "cons": ["전반적 성능 하위권", "궤도 관리 번거로움"],
+      "oneLiner": "불꽃 궤도가 독특하지만 성능 아쉬움.",
+      "newbieTip": null,
+      "newbieWarning": "점유율 46위. 다른 마법사가 더 나음."
+    },
+    {
+      "id": "blaster", "name": "블래스터", "class": "전사", "occupancyRank": 47, "occupancy": 0.41,
+      "hunting": 3, "bossing": 4, "easyToPlay": 1, "overall": 2, "newbieRating": 1,
+      "tags": ["보스형"],
+      "pros": ["고점 높음"],
+      "cons": ["손가락 혹사", "점유율 최하위"],
+      "oneLiner": "점유율 꼴찌. 손목 건강 생각하면 비추.",
+      "newbieTip": null,
+      "newbieWarning": "키보드를 피아노처럼 쳐야 함. 손목건강을 생각하면 뉴비에겐 절대 비추."
+    }
+  ]
+}
