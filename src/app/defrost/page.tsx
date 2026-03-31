@@ -36,7 +36,7 @@ export default function DefrostPage() {
         <span className="mr-2">🧊</span>해동 가이드
       </h1>
       <p className="text-sm text-[var(--text-secondary)]">
-        10년 만에 복귀? 차근차근 알려드릴게요. 요즘 메이플은 완전 다릅니다.
+        챌린저스가 처음이거나, 오랜만에 돌아왔다면. 차근차근 알려드릴게요.
       </p>
 
       {/* Progress */}

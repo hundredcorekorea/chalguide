@@ -70,7 +70,7 @@ export default function Home() {
           className="w-full p-6 rounded-xl border border-[var(--border)] bg-[var(--bg-card)] hover:bg-[var(--bg-card-hover)] transition-colors text-left"
         >
           <div className="text-2xl mb-2">🎮</div>
-          <div className="font-bold text-lg">바로 시작</div>
+          <div className="font-bold text-lg">익숙해요</div>
           <div className="text-sm text-[var(--text-secondary)]">
             대시보드 + 계산기 바로가기
           </div>
@@ -81,9 +81,9 @@ export default function Home() {
           className="w-full p-6 rounded-xl border border-[var(--accent-blue)]/30 bg-[var(--accent-blue)]/5 hover:bg-[var(--accent-blue)]/10 transition-colors text-left"
         >
           <div className="text-2xl mb-2">🧊</div>
-          <div className="font-bold text-lg">10년 만에 복귀했어요</div>
+          <div className="font-bold text-lg">뉴비에요</div>
           <div className="text-sm text-[var(--text-secondary)]">
-            요즘 메이플은 완전 달라요. 차근차근 알려드릴게요.
+            챌린저스가 처음이거나, 오랜만에 돌아왔어요
           </div>
         </button>
 
@@ -102,7 +102,7 @@ export default function Home() {
           <div className="text-3xl mb-3">🧊</div>
           <h2 className="text-lg font-bold mb-2">해동 가이드를 시작합니다</h2>
           <p className="text-sm text-[var(--text-secondary)] mb-4">
-            10년 만에 복귀하셨군요. 차근차근 알려드릴게요.
+            챌린저스가 처음이시군요. 차근차근 알려드릴게요.
           </p>
           <Link
             href="/defrost"
