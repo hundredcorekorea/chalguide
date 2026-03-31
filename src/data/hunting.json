@@ -1,6 +1,6 @@
 {
   "season": 3,
-  "note": "인기 사냥터/마릿수 데이터는 시즌4 전 추가 조사 필요. 현재는 구조만 잡아둠.",
+  "dataSource": "메이플위젯(maplewidget.com) 몹젠표 + 커뮤니티 종합",
   "zones": [
     {
       "levelRange": "~200",
@@ -8,7 +8,7 @@
       "area": "버닝 이벤트",
       "force": null,
       "forceType": null,
-      "description": "하이퍼버닝으로 200레벨까지 빠르게 도달",
+      "description": "하이퍼버닝으로 200레벨까지 빠르게 도달. 슈피겔만 NPC에게 테라 블링크 퀘스트 시작.",
       "popularSpots": null
     },
     {
@@ -17,12 +17,18 @@
       "area": "아케인 리버",
       "force": "30~45",
       "forceType": "아케인포스",
-      "description": "200레벨 첫 진입 지역. 아케인포스 확보 시작",
+      "description": "200레벨 첫 진입 지역. 아케인포스 확보 시작. 일일 심볼 퀘스트 필수.",
       "popularSpots": [
         {
-          "map": "역화하는 기억의 길 1",
-          "mobCount": null,
-          "reason": "1맵 구조, 몬스터 밀집도 높음. 뉴비 첫 사냥터로 최적.",
+          "map": "숨겨진 호숫가",
+          "mobCount": 36,
+          "reason": "소멸의 여로에서 젠수 최다(36마리). 1맵 구조로 뉴비 첫 사냥터 최적.",
+          "youtubeSearch": "소멸의여로+숨겨진호숫가+사냥"
+        },
+        {
+          "map": "풍화된 기쁨과 분노의 땅",
+          "mobCount": 28,
+          "reason": "28마리. 숨겨진 호숫가 다음 선택지.",
           "youtubeSearch": "소멸의여로+사냥터+추천"
         }
       ]
@@ -33,45 +39,63 @@
       "area": "아케인 리버",
       "force": "45",
       "forceType": "아케인포스",
-      "description": "아케인포스 45 이상 권장. 경험치 효율 높음",
+      "description": "아케인포스 45 이상 권장. 젠수가 적은 편(20~29)이라 효율은 모라스보다 낮을 수 있음.",
       "popularSpots": [
         {
-          "map": "캐비야르의 숲 깊은 곳 3",
-          "mobCount": null,
-          "reason": "마릿수 많고 리젠 빠름. 아르카나 대표 사냥터.",
-          "youtubeSearch": "아르카나+사냥터+추천"
+          "map": "동굴 윗길",
+          "mobCount": 29,
+          "reason": "아르카나 내 최다 젠(29마리). 맵 구조 단순.",
+          "youtubeSearch": "아르카나+동굴윗길+사냥"
+        },
+        {
+          "map": "물의 숲",
+          "mobCount": 28,
+          "reason": "28마리. 물 속성 몬스터. 일부 직업에 유리.",
+          "youtubeSearch": "아르카나+물의숲+사냥"
         }
       ]
     },
     {
       "levelRange": "220~240",
-      "name": "아르카나 / 모라스",
+      "name": "모라스",
       "area": "아케인 리버",
       "force": "45",
       "forceType": "아케인포스",
-      "description": "아르카나에서 모라스로 전환. 아케인포스 꾸준히 강화",
+      "description": "아르카나보다 젠수 많음(35~39). 220 이후 메인 사냥터.",
       "popularSpots": [
         {
-          "map": "가장 안쪽 곳 (모라스)",
-          "mobCount": null,
-          "reason": "모라스 대표 사냥터. 맵 구조가 사냥에 유리.",
-          "youtubeSearch": "모라스+사냥터+추천"
+          "map": "도둑고양이 출몰지",
+          "mobCount": 39,
+          "reason": "모라스 최다 젠(38~39마리). 220~240 최고 효율.",
+          "youtubeSearch": "모라스+도둑고양이+사냥"
+        },
+        {
+          "map": "산호 숲으로 가는 길",
+          "mobCount": 39,
+          "reason": "35~39마리. 맵 구조가 사냥에 유리. 도둑고양이 대안.",
+          "youtubeSearch": "모라스+산호숲+사냥"
         }
       ]
     },
     {
       "levelRange": "240~260",
-      "name": "에스페라 / 문브릿지 / 리멘",
+      "name": "에스페라 / 리멘",
       "area": "아케인 리버",
       "force": "90",
       "forceType": "아케인포스",
-      "description": "아케인포스 90(완성) 목표. 그란디스 전환 준비",
+      "description": "아케인포스 90(완성) 목표. 에스페라 36~39, 리멘 30~34마리.",
       "popularSpots": [
         {
-          "map": "미지의 학구역 (리멘)",
-          "mobCount": null,
-          "reason": "아케인 리버 마지막 구간 인기 사냥터.",
-          "youtubeSearch": "리멘+사냥터+추천"
+          "map": "생명이 시작되는 곳 (에스페라)",
+          "mobCount": 39,
+          "reason": "에스페라 최다 젠(36~39마리). 240~250 메인.",
+          "youtubeSearch": "에스페라+생명이시작되는곳+사냥"
+        },
+        {
+          "map": "세계의 눈물 (리멘)",
+          "mobCount": 33,
+          "reason": "리멘 대표 사냥터(33마리). 250~260 그란디스 전환 전 마지막.",
+          "youtubeSearch": "리멘+세계의눈물+사냥"
         }
       ]
     },
@@ -81,13 +105,19 @@
       "area": "그란디스",
       "force": "30",
       "forceType": "어센틱포스",
-      "description": "그란디스 첫 진입. 어센틱포스 수집 시작",
+      "description": "그란디스 첫 진입. 어센틱포스 수집 시작. 서쪽 성벽이 압도적 인기.",
       "popularSpots": [
         {
           "map": "서쪽 성벽 1",
-          "mobCount": null,
-          "reason": "세르니움 대표 인기 사냥터. 맵이 좁고 몬스터 밀집. 공략러 종합 1순위.",
+          "mobCount": 35,
+          "reason": "세르니움 대표 인기 사냥터. 편안한 지형, 직업 차 거의 없음. 공략러 종합 1순위.",
           "youtubeSearch": "세르니움+서쪽성벽+사냥"
+        },
+        {
+          "map": "왕립 도서관 제2구역",
+          "mobCount": 34,
+          "reason": "서쪽 성벽 대안. 33~34마리. 서쪽 성벽 자리 없을 때.",
+          "youtubeSearch": "세르니움+왕립도서관+사냥"
         }
       ]
     },
@@ -97,13 +127,19 @@
       "area": "그란디스",
       "force": "70",
       "forceType": "어센틱포스",
-      "description": "인기 사냥터. 어센틱포스 70 이상 권장",
+      "description": "265~270 최고 효율 구간. 넓은 맵 + 높은 마릿수.",
       "popularSpots": [
         {
-          "map": "1층 로비",
-          "mobCount": null,
-          "reason": "넓은 맵+높은 마릿수. 265~270 최고 효율 구간.",
-          "youtubeSearch": "호텔아르크스+사냥터+추천"
+          "map": "황야",
+          "mobCount": 39,
+          "reason": "호텔 아르크스 최다 젠(34~39마리). 넓은 맵에 몬스터 밀집.",
+          "youtubeSearch": "호텔아르크스+황야+사냥"
+        },
+        {
+          "map": "횡단열차",
+          "mobCount": 38,
+          "reason": "34~38마리. 황야 대안. 맵 구조에 따라 직업별 선호 갈림.",
+          "youtubeSearch": "호텔아르크스+횡단열차+사냥"
         }
       ]
     },
@@ -113,8 +149,15 @@
       "area": "그란디스",
       "force": null,
       "forceType": "어센틱포스",
-      "description": "어센틱포스 지속 강화 필요",
-      "popularSpots": null
+      "description": "젠수는 우수하지 않지만 편안한 사냥. 제자리 사냥 가능한 맵 존재.",
+      "popularSpots": [
+        {
+          "map": "제자리 사냥터 (직업별 상이)",
+          "mobCount": null,
+          "reason": "오디움은 직업별로 제자리 사냥터가 다름. 유튜브에서 본인 직업 검색 추천.",
+          "youtubeSearch": "오디움+제자리+사냥터"
+        }
+      ]
     },
     {
       "levelRange": "275~280",
@@ -122,8 +165,15 @@
       "area": "그란디스",
       "force": null,
       "forceType": "어센틱포스",
-      "description": "어센틱포스 진행 중",
-      "popularSpots": null
+      "description": "도원경~탈라하트는 대부분 제자리 사냥 가능. 편안한 사냥 구간.",
+      "popularSpots": [
+        {
+          "map": "제자리 사냥터 (직업별 상이)",
+          "mobCount": null,
+          "reason": "도원경부터는 제자리 사냥이 메인. 직업별 유튜브 공략 참고.",
+          "youtubeSearch": "도원경+제자리+사냥터"
+        }
+      ]
     },
     {
       "levelRange": "280~285",
@@ -131,8 +181,15 @@
       "area": "그란디스",
       "force": null,
       "forceType": "어센틱포스",
-      "description": "어센틱포스 후반부",
-      "popularSpots": null
+      "description": "맵이 넓고 동선이 긴 편. 중앙 남쪽 외곽지역이 좁아서 뇌빼기 사냥 가능.",
+      "popularSpots": [
+        {
+          "map": "중앙 남쪽 외곽지역",
+          "mobCount": 36,
+          "reason": "맵이 상당히 좁아 뇌빼기 사냥 가능. 젠량 36마리로 효율 괜찮음.",
+          "youtubeSearch": "아르테리아+남쪽외곽+사냥"
+        }
+      ]
     },
     {
       "levelRange": "285~290",
@@ -140,8 +197,15 @@
       "area": "그란디스",
       "force": null,
       "forceType": "어센틱포스",
-      "description": "어센틱포스 진행 중",
-      "popularSpots": null
+      "description": "어지간하면 다 제자리 사냥 가능. 레이저 없이도 OK.",
+      "popularSpots": [
+        {
+          "map": "제자리 사냥터 (다수)",
+          "mobCount": null,
+          "reason": "카르시온은 대부분 맵에서 제자리 사냥 가능. 직업별 유튜브 참고.",
+          "youtubeSearch": "카르시온+제자리+사냥터"
+        }
+      ]
     },
     {
       "levelRange": "290~300+",
@@ -149,8 +213,15 @@
       "area": "그란디스",
       "force": "180",
       "forceType": "어센틱포스",
-      "description": "어센틱포스 180(완성) 목표. 최종 사냥터",
-      "popularSpots": null
+      "description": "어센틱포스 180(완성) 목표. 최종 사냥터. 제자리 사냥 가능.",
+      "popularSpots": [
+        {
+          "map": "제자리 사냥터 (다수)",
+          "mobCount": null,
+          "reason": "탈라하트도 대부분 제자리 사냥 가능. 최종 사냥 구간.",
+          "youtubeSearch": "탈라하트+제자리+사냥터"
+        }
+      ]
     }
   ]
 }
