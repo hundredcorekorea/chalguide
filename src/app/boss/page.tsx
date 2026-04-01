@@ -1,7 +1,9 @@
 "use client";
 
 import { useState, useEffect, useMemo } from "react";
+import Image from "next/image";
 import bossData from "@/data/bosses.json";
+import bossImages from "@/data/bossImages.json";
 
 const TIER_COLORS: Record<string, string> = {
   납별: "#9ca3af",
@@ -215,6 +217,17 @@ export default function BossPage() {
                       >
                         {checked && "✓"}
                       </button>
+
+                      {/* Boss Image */}
+                      {(bossImages.images as Record<string, string>)[boss.name] && (
+                        <Image
+                          src={`/images/bosses/${(bossImages.images as Record<string, string>)[boss.name]}`}
+                          alt={boss.name}
+                          width={36}
+                          height={36}
+                          className="rounded shrink-0"
+                        />
+                      )}
 
                       <button
                         onClick={() =>

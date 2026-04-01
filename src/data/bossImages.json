@@ -1,0 +1,28 @@
+{
+  "note": "위컴알(WzComparerR2)로 추출한 보스 이미지. public/images/bosses/ 에 배치.",
+  "format": "PNG, 정사각형 권장 (200x200 or 300x300)",
+  "images": {
+    "자쿰": "zakum.png",
+    "힐라": "hilla.png",
+    "핑크빈": "pinkbean.png",
+    "시그너스": "cygnus.png",
+    "피에르": "pierre.png",
+    "반반": "vonbon.png",
+    "블러디퀸": "bloodyqueen.png",
+    "벨룸": "vellum.png",
+    "매그너스": "magnus.png",
+    "파풀라투스": "papulatus.png",
+    "스우": "suu.png",
+    "데미안": "demian.png",
+    "가디언 엔젤 슬라임": "gas.png",
+    "루시드": "lucid.png",
+    "윌": "will.png",
+    "더스크": "dusk.png",
+    "진 힐라": "jinhilla.png",
+    "듄켈": "dunkel.png",
+    "선택받은 세렌": "seren.png",
+    "감시자 칼로스": "callos.png",
+    "최초의 대적자": "rival.png",
+    "카이": "kai.png"
+  }
+}
