@@ -144,8 +144,9 @@ export default function Home() {
         <h2 className="text-sm font-bold text-slate-400 mb-3">더보기</h2>
         <div className="space-y-2">
           {[
+            { href: "/chaser", icon: "🌙", title: "미드나잇 체이서", desc: "가구 위치 기록 헬퍼" },
+            { href: "/quest", icon: "📋", title: "주간퀘스트", desc: "체크리스트 + 공략 가이드" },
             { href: "/defrost", icon: "🧊", title: "해동 가이드", desc: "복귀 유저를 위한 6단계" },
-            { href: "/quest", icon: "📋", title: "주간퀘스트", desc: "레벨별 해금 콘텐츠 헬퍼" },
             { href: "/glossary", icon: "📖", title: "은어 사전", desc: "아포, 블큐, 코강 뭔 소리?" },
           ].map((item) => (
             <Link
