@@ -14,7 +14,7 @@
   },
   "jobs": [
     {
-      "id": "ren", "name": "렌", "class": "궁수", "occupancyRank": 1, "occupancy": 13.99,
+      "id": "ren", "name": "렌", "class": "전사", "occupancyRank": 1, "occupancy": 13.99,
       "hunting": 4, "bossing": 5, "easyToPlay": 5, "overall": 5, "newbieRating": 5,
       "tags": ["보스형", "뉴비추천"],
       "pros": ["시즌3 신규 직업", "저난도인데 보스 성능 우수", "하이퍼 버닝 대상", "점유율 압도적 1위"],
