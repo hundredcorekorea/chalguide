@@ -41,15 +41,10 @@ const CALCULATORS = [
 
 export default function CalcPage() {
   return (
-    <div className="max-w-6xl mx-auto px-4 md:px-6 py-12">
-      {/* Header */}
-      <div className="mb-10">
-        <h1 className="text-3xl md:text-4xl font-black mb-3">
-          🧮 <span className="gradient-text">계산기</span>
-        </h1>
-        <p className="text-[var(--text-secondary)] text-lg">
-          시뮬레이션으로 최적의 성장 경로를 찾아보세요
-        </p>
+    <div className="max-w-6xl mx-auto px-4 md:px-6 pt-4 pb-20 md:py-10">
+      <div className="mb-6">
+        <h1 className="text-xl md:text-3xl font-black mb-1">🧮 계산기</h1>
+        <p className="text-xs md:text-sm text-slate-400">시뮬레이션으로 최적의 성장 경로를 찾아보세요</p>
       </div>
 
       {/* Calculator Grid */}

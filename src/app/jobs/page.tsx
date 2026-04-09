@@ -76,14 +76,10 @@ export default function JobsPage() {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto px-4 md:px-6 py-12 space-y-6">
-      <div className="mb-4">
-        <h1 className="text-3xl md:text-4xl font-black mb-2">
-          🎮 <span className="gradient-text">직업 추천</span>
-        </h1>
-        <p className="text-[var(--text-secondary)]">
-          챌린저스 메타 기준 · 메이플지지 316만건 실측 · 47개 전 직업
-        </p>
+    <div className="max-w-6xl mx-auto px-4 md:px-6 pt-4 pb-20 md:py-10 space-y-4 md:space-y-6">
+      <div>
+        <h1 className="text-xl md:text-3xl font-black mb-1">🎮 직업 추천</h1>
+        <p className="text-xs md:text-sm text-slate-400">챌린저스 메타 기준 · 316만건 실측 · 47개 전 직업</p>
       </div>
 
       {/* Filter */}

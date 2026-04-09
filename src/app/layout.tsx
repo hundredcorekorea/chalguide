@@ -33,18 +33,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navigation />
         <main>{children}</main>
 
-        {/* Footer */}
-        <footer className="border-t border-slate-800 py-8 pb-24 md:pb-8">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500">
-              <div>
-                <span className="text-orange-400 font-bold">챌섭가이드</span>
-                {" "}Copyright © 2026
-              </div>
-              <div className="text-xs text-center md:text-right">
-                Data based on NEXON Open API. 비공식 팬 사이트이며 NEXON과 제휴 관계가 없습니다.
-              </div>
-            </div>
+        {/* Footer — 모바일에선 하단탭 위에, 최소화 */}
+        <footer className="border-t border-slate-800 py-4 pb-20 md:pb-4">
+          <div className="max-w-7xl mx-auto px-4 md:px-8 text-center text-[11px] md:text-xs text-slate-600">
+            <span className="text-orange-400/60 font-bold">챌섭가이드</span> © 2026 · Data based on NEXON Open API · 비공식 팬 사이트
           </div>
         </footer>
       </body>

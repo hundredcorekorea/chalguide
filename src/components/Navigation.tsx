@@ -10,11 +10,11 @@ const NAV_ITEMS = [
   { href: "/jobs", label: "직업", icon: "🎮" },
 ];
 
-const MOBILE_NAV = [
+const MOBILE_TAB = [
   { href: "/", label: "홈", icon: "🏠" },
-  { href: "/guide", label: "가이드", icon: "📚" },
-  { href: "/calc", label: "계산기", icon: "🧮" },
   { href: "/boss", label: "보스", icon: "⚔️" },
+  { href: "/calc", label: "점수", icon: "🧮" },
+  { href: "/guide", label: "가이드", icon: "📚" },
   { href: "/jobs", label: "직업", icon: "🎮" },
 ];
 
@@ -46,35 +46,30 @@ export default function Navigation() {
             >
               {item.icon} {item.label}
               {item.isNew && (
-                <span className="absolute -top-1 -right-1 px-1.5 py-0.5 bg-orange-500 text-white text-[9px] font-bold rounded-full">NEW</span>
+                <span className="absolute -top-1 -right-1 px-1.5 py-0.5 bg-orange-500 text-white text-[9px] font-bold rounded-full">N</span>
               )}
             </Link>
           ))}
           <div className="flex-1" />
-          <Link
-            href="/"
-            className="text-sm text-slate-500 hover:text-slate-300 transition-colors"
-          >
+          <Link href="/" className="text-sm text-slate-500 hover:text-slate-300 transition-colors">
             🏠 홈으로
           </Link>
         </div>
       </nav>
 
-      {/* Mobile bottom nav */}
-      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 border-t border-slate-800 bg-slate-950/90 backdrop-blur-xl safe-area-bottom">
-        <div className="flex justify-around items-center h-16 px-2">
-          {MOBILE_NAV.map((item) => (
+      {/* Mobile bottom tab bar — 앱 스타일 */}
+      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 border-t border-slate-800 bg-slate-950/95 backdrop-blur-xl safe-area-bottom">
+        <div className="grid grid-cols-5 h-16">
+          {MOBILE_TAB.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className={`flex flex-col items-center gap-0.5 px-3 py-1.5 rounded-lg text-xs transition-all ${
-                isActive(item.href)
-                  ? "text-orange-400"
-                  : "text-slate-500"
+              className={`flex flex-col items-center justify-center gap-0.5 active:scale-90 transition-transform ${
+                isActive(item.href) ? "text-orange-400" : "text-slate-500"
               }`}
             >
-              <span className="text-lg">{item.icon}</span>
-              <span className="font-medium">{item.label}</span>
+              <span className="text-xl leading-none">{item.icon}</span>
+              <span className="text-[10px] font-medium leading-none">{item.label}</span>
             </Link>
           ))}
         </div>

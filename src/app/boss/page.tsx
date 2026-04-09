@@ -112,12 +112,12 @@ export default function BossPage() {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto px-4 md:px-6 py-12 space-y-6">
-      <div className="mb-4">
-        <h1 className="text-3xl md:text-4xl font-black mb-2">
-          ⚔️ <span className="gradient-text">보스 체크리스트</span>
+    <div className="max-w-6xl mx-auto px-4 md:px-6 pt-4 pb-20 md:py-10 space-y-4 md:space-y-6">
+      <div>
+        <h1 className="text-xl md:text-3xl font-black mb-1">
+          ⚔️ 보스 체크리스트
         </h1>
-        <p className="text-[var(--text-secondary)]">매주 잡은 보스를 체크하세요. 포인트가 자동 계산됩니다.</p>
+        <p className="text-xs md:text-sm text-slate-400">매주 잡은 보스를 체크하세요. 포인트가 자동 계산됩니다.</p>
       </div>
 
       {/* Summary */}

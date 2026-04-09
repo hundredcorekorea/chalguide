@@ -33,14 +33,10 @@ export default function GlossaryPage() {
   });
 
   return (
-    <div className="max-w-6xl mx-auto px-4 md:px-6 py-12 space-y-6">
-      <div className="mb-4">
-        <h1 className="text-3xl md:text-4xl font-black mb-2">
-          📖 <span className="gradient-text">은어 사전</span>
-        </h1>
-        <p className="text-[var(--text-secondary)]">
-          메이플 은어를 탭하면 뜻이 나옵니다. 모르는 단어를 검색해보세요.
-        </p>
+    <div className="max-w-6xl mx-auto px-4 md:px-6 pt-4 pb-20 md:py-10 space-y-4 md:space-y-6">
+      <div>
+        <h1 className="text-xl md:text-3xl font-black mb-1">📖 은어 사전</h1>
+        <p className="text-xs md:text-sm text-slate-400">탭하면 뜻이 나옵니다. 모르는 단어를 검색해보세요.</p>
       </div>
 
       {/* Search */}
