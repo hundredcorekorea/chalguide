@@ -28,11 +28,15 @@ export default function QuestPage() {
   );
 
   return (
-    <div className="py-8 space-y-6">
-      <h1 className="text-2xl font-bold">주간퀘스트 헬퍼</h1>
-      <p className="text-sm text-[var(--text-secondary)]">
-        체크리스트가 아니라 &quot;이건 뭐고, 어떻게 해?&quot;를 알려주는 헬퍼.
-      </p>
+    <div className="max-w-6xl mx-auto px-4 md:px-6 py-12 space-y-6">
+      <div className="mb-4">
+        <h1 className="text-3xl md:text-4xl font-black mb-2">
+          📋 <span className="gradient-text">주간퀘스트 헬퍼</span>
+        </h1>
+        <p className="text-[var(--text-secondary)]">
+          체크리스트가 아니라 &quot;이건 뭐고, 어떻게 해?&quot;를 알려주는 헬퍼.
+        </p>
+      </div>
 
       {/* Level Input */}
       <div className="p-4 rounded-xl border border-[var(--border)] bg-[var(--bg-card)]">

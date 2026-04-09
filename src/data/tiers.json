@@ -1,13 +1,23 @@
 {
   "season": 3,
   "seasonName": "CROWN",
+  "seasonPeriod": "2025.12.18 ~ 2026.04.15",
+  "dataSource": "maple.ai.kr + 넥슨 공식 + 유튜브/커뮤니티 교차검증 (2026-04-08)",
+  "notes": [
+    "에메랄드 미만은 챌린저스 월드 내 캐릭터용",
+    "에메랄드 이상부터 일반 월드에서 보상 수령 가능",
+    "효율적 목표: 다이아몬드(40,000pt) 또는 마스터(65,000pt)",
+    "보스 미션 총합: 101,300pt / 레벨 미션 추가 포인트 별도"
+  ],
   "tiers": [
     {
       "id": "beginner",
       "name": "비기너",
       "score": 0,
       "color": "#9ca3af",
-      "rewards": [],
+      "condition": null,
+      "rewardTarget": "챌린저스 월드",
+      "rewards": ["기본 버프"],
       "buffs": {
         "exp": 50,
         "att": 50,
@@ -23,7 +33,9 @@
       "name": "브론즈",
       "score": 5000,
       "color": "#cd7f32",
-      "rewards": ["훈장", "휘장로이드", "솔 에르다 조각 100개"],
+      "condition": null,
+      "rewardTarget": "챌린저스 월드",
+      "rewards": ["브론즈 훈장 교환권", "챌린저스 휘장로이드 교환권", "솔 에르다 조각 100개", "솔 에르다 3개"],
       "buffs": {
         "exp": 50,
         "att": 55,
@@ -39,7 +51,9 @@
       "name": "실버",
       "score": 10000,
       "color": "#c0c0c0",
-      "rewards": ["훈장", "특수 스킬 반지 선택권"],
+      "condition": null,
+      "rewardTarget": "챌린저스 월드",
+      "rewards": ["실버 훈장 교환권", "4레벨 특수 스킬 반지 선택권", "솔 에르다 조각 100개", "솔 에르다 3개"],
       "buffs": {
         "exp": 50,
         "att": 60,
@@ -55,7 +69,9 @@
       "name": "골드",
       "score": 15000,
       "color": "#ffd700",
-      "rewards": ["훈장", "솔 에르다"],
+      "condition": null,
+      "rewardTarget": "챌린저스 월드",
+      "rewards": ["골드 훈장 교환권", "솔 에르다"],
       "buffs": {
         "exp": 50,
         "att": 70,
@@ -71,7 +87,9 @@
       "name": "플래티넘",
       "score": 20000,
       "color": "#7dd3fc",
-      "rewards": ["훈장", "솔 에르다 조각 300개"],
+      "condition": null,
+      "rewardTarget": "챌린저스 월드",
+      "rewards": ["플래티넘 훈장 교환권", "솔 에르다 조각 300개"],
       "buffs": {
         "exp": 50,
         "att": 80,
@@ -87,13 +105,11 @@
       "name": "에메랄드",
       "score": 30000,
       "color": "#22c55e",
-      "rewards": ["블랙 큐브 30개", "유니온 성장 비약", "레전드리 잠재 스크롤"],
+      "condition": null,
+      "rewardTarget": "일반 월드 수령 가능",
+      "rewards": ["카르마 블랙 큐브 30개", "유니온 성장 비약", "레전드리 잠재능력 부여 주문서"],
       "buffs": {
         "exp": 50,
-        "att": null,
-        "allStat": null,
-        "bossDmg": null,
-        "ied": null,
         "critRate": 30,
         "normalDmg": 150
       }
@@ -103,13 +119,11 @@
       "name": "다이아몬드",
       "score": 40000,
       "color": "#60a5fa",
-      "rewards": ["레전드리 잠재 스크롤", "에디셔널 유니크 스크롤", "코지 윈터 세트"],
+      "condition": null,
+      "rewardTarget": "일반 월드 수령 가능",
+      "rewards": ["레전드리 잠재능력 부여 주문서", "에디셔널 유니크 스크롤", "코지 윈터 세트"],
       "buffs": {
         "exp": 50,
-        "att": null,
-        "allStat": null,
-        "bossDmg": null,
-        "ied": null,
         "critRate": 30,
         "normalDmg": 150,
         "mesoDrop": 20
@@ -120,7 +134,9 @@
       "name": "마스터",
       "score": 65000,
       "color": "#a78bfa",
-      "rewards": ["블랙 큐브 30개", "화이트 에디셔널 큐브 30개"],
+      "condition": "카이 노멀 처치 필수",
+      "rewardTarget": "일반 월드 수령 가능",
+      "rewards": ["카르마 블랙 큐브 30개", "카르마 화이트 에디셔널 큐브 30개"],
       "buffs": {}
     },
     {
@@ -128,7 +144,9 @@
       "name": "챌린저",
       "score": 90000,
       "color": "#f97316",
-      "rewards": ["챌린저 가구 교환권 (명예 보상)"],
+      "condition": "카이 하드 처치 필수",
+      "rewardTarget": "일반 월드 수령 가능",
+      "rewards": ["챌린저 가구 교환권", "순위 훈장 (1st~10th)"],
       "buffs": {}
     }
   ]

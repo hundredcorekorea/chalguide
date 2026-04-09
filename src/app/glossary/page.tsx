@@ -33,11 +33,15 @@ export default function GlossaryPage() {
   });
 
   return (
-    <div className="py-8 space-y-6">
-      <h1 className="text-2xl font-bold">은어 사전</h1>
-      <p className="text-sm text-[var(--text-secondary)]">
-        메이플 은어를 탭하면 뜻이 나옵니다. 모르는 단어를 검색해보세요.
-      </p>
+    <div className="max-w-6xl mx-auto px-4 md:px-6 py-12 space-y-6">
+      <div className="mb-4">
+        <h1 className="text-3xl md:text-4xl font-black mb-2">
+          📖 <span className="gradient-text">은어 사전</span>
+        </h1>
+        <p className="text-[var(--text-secondary)]">
+          메이플 은어를 탭하면 뜻이 나옵니다. 모르는 단어를 검색해보세요.
+        </p>
+      </div>
 
       {/* Search */}
       <input

@@ -1,6 +1,11 @@
 {
   "season": 3,
-  "dataSource": "메이플위젯(maplewidget.com) 몹젠표 + 인벤/커뮤니티 종합",
+  "dataSource": "나무위키 + 인벤 + 에펨코리아 + maplewidget.com 교차검증 (2026-04-08)",
+  "notes": [
+    "챌린저스 월드와 일반 서버의 포스 요구치는 동일",
+    "같은 지역 내에서도 맵에 따라 요구 포스가 다름 (범위로 표기)",
+    "길라잡이 필드 10명, 어센틱포스 필드 8명 제한"
+  ],
   "zones": [
     {
       "levelRange": "~200",
@@ -15,20 +20,22 @@
       "levelRange": "200~210",
       "name": "소멸의 여로",
       "area": "아케인 리버",
-      "force": "30~45",
+      "force": "30~80",
       "forceType": "아케인포스",
       "description": "200레벨 첫 진입 지역. 아케인포스 확보 시작. 일일 심볼 퀘스트 필수.",
       "popularSpots": [
         {
           "map": "숨겨진 호숫가",
           "mobCount": 36,
+          "force": 80,
           "reason": "소멸의 여로 최다 젠(36마리). 1맵 구조로 뉴비 첫 사냥터 최적.",
           "youtubeSearch": "소멸의여로+숨겨진호숫가+사냥"
         },
         {
           "map": "풍화된 기쁨과 분노의 땅",
           "mobCount": 28,
-          "reason": "28마리. 호숫가 자리 없을 때 대안.",
+          "force": 30,
+          "reason": "28마리. 아케인포스 낮아도 진입 가능. 호숫가 자리 없을 때 대안.",
           "youtubeSearch": "소멸의여로+사냥터+추천"
         }
       ]
@@ -37,25 +44,28 @@
       "levelRange": "210~220",
       "name": "츄츄 아일랜드",
       "area": "아케인 리버",
-      "force": "30",
+      "force": "100~160",
       "forceType": "아케인포스",
       "description": "격류지대가 메이플 전체에서도 손꼽히는 효율 사냥터. 심볼 일퀘 병행.",
       "popularSpots": [
         {
           "map": "격류지대 3",
           "mobCount": 34,
-          "reason": "츄츄 대표 인기 사냥터. 지형이 뛰어나고 효율 최고. 자리 경쟁 있음.",
+          "force": 100,
+          "reason": "츄츄 대표 인기 사냥터. 지형 뛰어나고 효율 최고. 자리 경쟁 있음.",
           "youtubeSearch": "츄츄아일랜드+격류지대+사냥"
         },
         {
           "map": "격류지대 1",
           "mobCount": 34,
-          "reason": "24젠/최대34마리. 격류지대 3 자리 없을 때 대안.",
+          "force": 100,
+          "reason": "격류지대 3 자리 없을 때 대안.",
           "youtubeSearch": "츄츄아일랜드+격류지대+사냥"
         },
         {
           "map": "격류지대 4",
           "mobCount": 36,
+          "force": 100,
           "reason": "26젠/최대36마리. 섬 간격이 넓어 원거리 직업에 유리.",
           "youtubeSearch": "츄츄아일랜드+격류지대4+사냥"
         }
@@ -65,35 +75,38 @@
       "levelRange": "215~225",
       "name": "레헬른",
       "area": "아케인 리버",
-      "force": "40",
+      "force": "160",
       "forceType": "아케인포스",
       "description": "클로즈/오디드맵 구조. 심볼 일퀘 병행. 아르카나 전 육성 선택지.",
       "popularSpots": [
         {
           "map": "레헬른의 거리",
           "mobCount": 30,
+          "force": 160,
           "reason": "레헬른 대표 사냥터. 약 30마리. 맵 구조 단순.",
           "youtubeSearch": "레헬른+사냥터+추천"
         }
       ]
     },
     {
-      "levelRange": "220~235",
+      "levelRange": "225~235",
       "name": "아르카나",
       "area": "아케인 리버",
-      "force": "45",
+      "force": "210~320",
       "forceType": "아케인포스",
-      "description": "아케인포스 45 이상 권장. 젠수가 적은 편(20~29)이지만 심볼 일퀘 효율 좋음.",
+      "description": "아케인포스 210+ 권장. 심볼 일퀘 효율 좋음. 동굴 윗길이 대표 사냥터.",
       "popularSpots": [
         {
           "map": "동굴 윗길",
           "mobCount": 29,
+          "force": 210,
           "reason": "아르카나 최다 젠(29마리). 맵 구조 단순. 직업 불문 무난.",
           "youtubeSearch": "아르카나+동굴윗길+사냥"
         },
         {
           "map": "캐비야르의 숲 깊은 곳 3",
           "mobCount": 28,
+          "force": 240,
           "reason": "28마리. 리젠 빠름. 아르카나 또 다른 인기 맵.",
           "youtubeSearch": "아르카나+캐비야르+사냥"
         }
@@ -103,41 +116,45 @@
       "levelRange": "230~245",
       "name": "모라스",
       "area": "아케인 리버",
-      "force": "50",
+      "force": "270~560",
       "forceType": "아케인포스",
       "description": "아르카나보다 젠수 월등(35~39마리). 230 이후 메인 사냥터.",
       "popularSpots": [
         {
           "map": "도둑고양이 출몰지",
           "mobCount": 39,
+          "force": 270,
           "reason": "모라스 최다 젠(38~39마리). 230~245 최고 효율. 자리 경쟁 치열.",
           "youtubeSearch": "모라스+도둑고양이+사냥"
         },
         {
           "map": "산호 숲으로 가는 길",
           "mobCount": 39,
+          "force": 270,
           "reason": "35~39마리. 도둑고양이 대안. 맵 구조 쾌적.",
           "youtubeSearch": "모라스+산호숲+사냥"
         }
       ]
     },
     {
-      "levelRange": "240~250",
+      "levelRange": "235~250",
       "name": "에스페라",
       "area": "아케인 리버",
-      "force": "60",
+      "force": "300~560",
       "forceType": "아케인포스",
-      "description": "아케인포스 60+ 필요. 젠수 36~39로 모라스급 효율.",
+      "description": "아케인포스 300+ 필요. 젠수 36~39로 모라스급 효율.",
       "popularSpots": [
         {
           "map": "생명이 시작되는 곳 1",
           "mobCount": 39,
+          "force": 300,
           "reason": "에스페라 최다 젠(36~39마리). 240~250 메인 사냥터.",
           "youtubeSearch": "에스페라+생명이시작되는곳+사냥"
         },
         {
           "map": "거울빛에 물든 바다 3",
           "mobCount": 29,
+          "force": 300,
           "reason": "26~29마리. 생명이 시작되는 곳 대안.",
           "youtubeSearch": "에스페라+거울빛+사냥"
         }
@@ -146,36 +163,39 @@
     {
       "levelRange": "245~255",
       "name": "문브릿지",
-      "area": "아케인 리버",
-      "force": "70",
+      "area": "테네브리스",
+      "force": "670~730",
       "forceType": "아케인포스",
-      "description": "에스페라와 리멘 사이 구간. 심볼 일퀘 병행.",
+      "description": "에스페라와 리멘 사이. 아케인포스 요구치가 급격히 상승하는 구간.",
       "popularSpots": [
         {
           "map": "잊혀진 황혼의 길 4",
           "mobCount": 33,
+          "force": 670,
           "reason": "문브릿지 대표 사냥터. 약 33마리. 맵 구조 양호.",
           "youtubeSearch": "문브릿지+사냥터+추천"
         }
       ]
     },
     {
-      "levelRange": "250~260",
+      "levelRange": "255~260",
       "name": "리멘",
-      "area": "아케인 리버",
-      "force": "90",
+      "area": "테네브리스",
+      "force": "850~880",
       "forceType": "아케인포스",
-      "description": "아케인포스 90(완성) 목표. 아케인 리버 마지막 지역.",
+      "description": "아케인 리버 마지막 지역. 아케인포스 완성 목표 구간.",
       "popularSpots": [
         {
           "map": "세계의 눈물 1",
           "mobCount": 33,
-          "reason": "리멘 대표 사냥터(33마리). 250~260 그란디스 전환 전 마지막.",
+          "force": 850,
+          "reason": "리멘 대표 사냥터(33마리). 그란디스 전환 전 마지막.",
           "youtubeSearch": "리멘+세계의눈물+사냥"
         },
         {
           "map": "세계가 끝나는 곳 4",
           "mobCount": 34,
+          "force": 880,
           "reason": "30~34마리. 세계의 눈물 대안.",
           "youtubeSearch": "리멘+세계가끝나는곳+사냥"
         }
@@ -185,25 +205,28 @@
       "levelRange": "260~265",
       "name": "세르니움",
       "area": "그란디스",
-      "force": "30",
+      "force": "30~100",
       "forceType": "어센틱포스",
       "description": "그란디스 첫 진입. 어센틱포스 수집 시작. 서쪽 성벽이 압도적 인기.",
       "popularSpots": [
         {
           "map": "서쪽 성벽 1",
           "mobCount": 35,
-          "reason": "세르니움 대표 인기 사냥터. 편안한 지형, 직업 차 거의 없음. 공략러 종합 1순위.",
+          "force": 50,
+          "reason": "세르니움 대표 인기 사냥터. 편안한 지형, 직업 차 거의 없음.",
           "youtubeSearch": "세르니움+서쪽성벽+사냥"
         },
         {
           "map": "왕립 도서관 제2구역",
           "mobCount": 34,
+          "force": 60,
           "reason": "33~34마리. 서쪽 성벽 자리 없을 때 대안.",
           "youtubeSearch": "세르니움+왕립도서관+사냥"
         },
         {
           "map": "해변 암석 지대 1",
           "mobCount": 38,
+          "force": 30,
           "reason": "34~38마리. 젠수 높지만 맵 구조가 서쪽 성벽보다 불편.",
           "youtubeSearch": "세르니움+해변암석+사냥"
         }
@@ -213,25 +236,28 @@
       "levelRange": "265~270",
       "name": "호텔 아르크스",
       "area": "그란디스",
-      "force": "70",
+      "force": "130~200",
       "forceType": "어센틱포스",
       "description": "265~270 최고 효율 구간. 넓은 맵 + 높은 마릿수.",
       "popularSpots": [
         {
-          "map": "황야",
+          "map": "황야 1",
           "mobCount": 39,
+          "force": 130,
           "reason": "호텔 아르크스 최다 젠(34~39마리). 넓은 맵에 몬스터 밀집.",
           "youtubeSearch": "호텔아르크스+황야+사냥"
         },
         {
-          "map": "자동차극장",
+          "map": "자동차극장 1",
           "mobCount": 39,
-          "reason": "34~39마리. 황야와 비슷한 효율. 맵 취향 따라 선택.",
+          "force": 160,
+          "reason": "34~39마리. 황야와 비슷한 효율.",
           "youtubeSearch": "호텔아르크스+자동차극장+사냥"
         },
         {
-          "map": "횡단열차",
+          "map": "횡단열차 1",
           "mobCount": 38,
+          "force": 200,
           "reason": "34~38마리. 일자 맵 구조로 일부 직업에 유리.",
           "youtubeSearch": "호텔아르크스+횡단열차+사냥"
         }
@@ -241,19 +267,21 @@
       "levelRange": "270~275",
       "name": "오디움",
       "area": "그란디스",
-      "force": "100",
+      "force": "230~300",
       "forceType": "어센틱포스",
-      "description": "젠수가 우수하진 않지만 편안한 사냥. 제자리 사냥 가능 맵 다수.",
+      "description": "4구역 구조. 제자리 사냥 가능 맵 다수. 편안한 사냥.",
       "popularSpots": [
         {
           "map": "중앙 관제 구역 1",
           "mobCount": 32,
+          "force": 230,
           "reason": "오디움 대표 사냥터. 약 32마리. 제자리 사냥 가능.",
           "youtubeSearch": "오디움+중앙관제+사냥"
         },
         {
           "map": "외곽 순찰 구역",
           "mobCount": 30,
+          "force": 260,
           "reason": "약 30마리. 제자리 사냥 가능. 직업별 유튜브 참고 추천.",
           "youtubeSearch": "오디움+제자리+사냥터"
         }
@@ -263,19 +291,21 @@
       "levelRange": "275~280",
       "name": "도원경",
       "area": "그란디스",
-      "force": "120",
+      "force": "230~480",
       "forceType": "어센틱포스",
-      "description": "도원경부터는 제자리 사냥이 메인. 편안한 사냥 구간.",
+      "description": "4구역(봄/여름/가을/겨울) 구조. 제자리 사냥이 메인.",
       "popularSpots": [
         {
           "map": "선인장 은신처 3",
           "mobCount": 34,
+          "force": 230,
           "reason": "도원경 대표 인기 사냥터. 약 34마리. 제자리 사냥 편리.",
           "youtubeSearch": "도원경+선인장+사냥"
         },
         {
           "map": "연무장 입구",
           "mobCount": 32,
+          "force": 330,
           "reason": "약 32마리. 선인장 대안. 제자리 가능.",
           "youtubeSearch": "도원경+연무장+사냥"
         }
@@ -285,19 +315,21 @@
       "levelRange": "280~285",
       "name": "아르테리아",
       "area": "그란디스",
-      "force": "140",
+      "force": "330~400",
       "forceType": "어센틱포스",
       "description": "맵이 넓고 동선 긴 편. 중앙 남쪽 외곽지역이 뇌빼기 사냥 가능.",
       "popularSpots": [
         {
           "map": "중앙 남쪽 외곽지역",
           "mobCount": 36,
+          "force": 330,
           "reason": "맵이 상당히 좁아 뇌빼기 사냥 가능. 젠량 36마리로 효율 괜찮음.",
           "youtubeSearch": "아르테리아+남쪽외곽+사냥"
         },
         {
           "map": "서쪽 순환로 2",
           "mobCount": 33,
+          "force": 360,
           "reason": "약 33마리. 남쪽 외곽 대안. 제자리 사냥 가능 직업 있음.",
           "youtubeSearch": "아르테리아+서쪽순환로+사냥"
         }
@@ -307,43 +339,71 @@
       "levelRange": "285~290",
       "name": "카르시온",
       "area": "그란디스",
-      "force": "160",
+      "force": "430~500",
       "forceType": "어센틱포스",
-      "description": "어지간하면 다 제자리 사냥 가능. 레이저 없이도 OK.",
+      "description": "대부분 맵에서 제자리 사냥 가능.",
       "popularSpots": [
         {
-          "map": "폐기된 연구실 3",
+          "map": "거대 산호 군락 1",
           "mobCount": 35,
-          "reason": "카르시온 대표 사냥터. 약 35마리. 제자리 사냥 편리.",
-          "youtubeSearch": "카르시온+폐기된연구실+사냥"
+          "force": 430,
+          "reason": "카르시온 초반 사냥터. 약 35마리.",
+          "youtubeSearch": "카르시온+산호군락+사냥"
         },
         {
-          "map": "격리된 실험실 2",
+          "map": "숨이 멎어드는 동굴 1",
           "mobCount": 33,
-          "reason": "약 33마리. 대부분 맵에서 제자리 가능. 직업별 유튜브 참고.",
-          "youtubeSearch": "카르시온+격리된실험실+사냥"
+          "force": 500,
+          "reason": "약 33마리. 후반 맵. 제자리 가능.",
+          "youtubeSearch": "카르시온+동굴+사냥"
         }
       ]
     },
     {
-      "levelRange": "290~300+",
-      "name": "탈라하트 / 기어드락",
+      "levelRange": "290~295",
+      "name": "탈라하트",
       "area": "그란디스",
-      "force": "180",
+      "force": "630~700",
       "forceType": "어센틱포스",
-      "description": "어센틱포스 180(완성) 목표. 최종 사냥터. 제자리 사냥 가능.",
+      "description": "그랜드 어센틱심볼 지역. 제자리 사냥 가능.",
       "popularSpots": [
         {
-          "map": "잠식된 구역 3 (탈라하트)",
+          "map": "잠식된 구역 3",
           "mobCount": 36,
+          "force": 630,
           "reason": "탈라하트 대표 사냥터. 약 36마리. 제자리 사냥 가능.",
           "youtubeSearch": "탈라하트+잠식된구역+사냥"
         },
         {
-          "map": "기어드락 외곽",
+          "map": "운명의 전쟁터 1",
           "mobCount": 34,
-          "reason": "약 34마리. 최종 구간 사냥터. 제자리 가능.",
+          "force": 660,
+          "reason": "약 34마리. 후반 사냥터.",
+          "youtubeSearch": "탈라하트+전쟁터+사냥"
+        }
+      ]
+    },
+    {
+      "levelRange": "295~300+",
+      "name": "기어드락",
+      "area": "그란디스",
+      "force": "740~810",
+      "forceType": "어센틱포스",
+      "description": "2026.02 추가된 최신 지역. 최종 사냥터. 어센틱포스 완성 목표 구간.",
+      "popularSpots": [
+        {
+          "map": "지하 레벨 1",
+          "mobCount": 34,
+          "force": 740,
+          "reason": "기어드락 초반 사냥터. 제자리 가능.",
           "youtubeSearch": "기어드락+사냥터+추천"
+        },
+        {
+          "map": "로봇 창고 1",
+          "mobCount": 35,
+          "force": 770,
+          "reason": "약 35마리. 메인 사냥 구간.",
+          "youtubeSearch": "기어드락+로봇창고+사냥"
         }
       ]
     }

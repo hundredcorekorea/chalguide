@@ -1,132 +1,139 @@
 {
   "season": 3,
   "seasonName": "CROWN",
+  "seasonPeriod": "2025.12.18 ~ 2026.04.15",
   "resetDay": "목요일",
   "resetTime": "00:00 KST",
-  "crystalLimit": { "perCharacter": 12, "perWorld": 90 },
-  "dataSource": "maple.ai.kr 보스 티어 가이드 + 보스별 보상 가이드 + 넥슨 공식",
-  "tierSystem": {
-    "금별": "최상위 보스. 극한의 스펙과 컨트롤, 완벽한 파티 합 요구.",
-    "은별": "상위 보스. 파티 격파 주류, 보스 도핑 필수. 은별 6개부터 난이도 급상승.",
-    "동별": "주간 보스. 패턴 숙지와 컨트롤 연습이 본격적으로 필요. 무자본 유저 1차 목표.",
-    "납별": "일일 보스. 메이플에 적응하며 기초 스펙업과 자본 마련하는 단계."
-  },
+  "totalPoints": 101300,
+  "dataSource": "maple.ai.kr 챌린저스 시즌3 계산기 + 넥슨 공식 테스트월드 패치노트 + 나무위키 교차검증 (2026-04-08)",
+  "notes": [
+    "상위 난이도 격파 시 하위 난이도 자동 완료",
+    "연습 모드에서도 인정됨 (마지막 페이즈 처치 시점)",
+    "챌린저스에서는 결정석 드롭 없음 (본섭 전용)"
+  ],
   "categories": [
     {
       "name": "입문",
-      "tier": "납별",
-      "description": "각 100pt. 일일 보스 최강 라인. 뉴비 첫 보스 도전 구간.",
-      "guide": "자쿰/힐라부터 시작하세요. 파풀라투스는 레이저 패턴이 까다로우니 패턴 연습용으로 좋습니다.",
+      "tier": "입문",
+      "description": "각 100pt / 100코인. 뉴비 첫 보스 도전 구간.",
+      "guide": "자쿰 카오스/힐라 하드부터 시작. 루타비스 4형제(피에르/반반/블러디퀸/벨룸)는 카오스만 미션에 포함.",
       "bosses": [
         {
+          "id": "cygnus_easy", "name": "시그너스", "difficulty": "이지",
+          "points": 100, "coins": 100, "premiumCoins": 0, "type": "weekly",
+          "reason": "시그너스 장비 드롭. 입문자용.",
+          "warning": null,
+          "drops": ["시그너스 장비"]
+        },
+        {
+          "id": "cygnus_normal", "name": "시그너스", "difficulty": "노멀",
+          "points": 100, "coins": 100, "premiumCoins": 0, "type": "weekly",
+          "reason": "이지와 동일 보상. 상위 난이도 격파 시 이지 자동 완료.",
+          "warning": null,
+          "drops": ["시그너스 장비"]
+        },
+        {
           "id": "zakum_chaos", "name": "자쿰", "difficulty": "카오스",
-          "points": 100, "coins": 100, "type": "daily",
-          "reason": "결정석 수입의 기본. 매일 잡아서 메소 마련.",
+          "points": 100, "coins": 100, "premiumCoins": 0, "type": "daily",
+          "reason": "매일 잡을 수 있는 일일 보스. 기초 장비 마련.",
           "warning": "즉사기 주의. 부활 횟수 관리.",
           "drops": ["자쿰 헬멧"]
         },
         {
           "id": "hilla_hard", "name": "힐라", "difficulty": "하드",
-          "points": 100, "coins": 100, "type": "daily",
-          "reason": "블랙빈 펫 드롭 가능. 일일 결정석.",
+          "points": 100, "coins": 100, "premiumCoins": 0, "type": "daily",
+          "reason": "블랙빈 펫 드롭 가능.",
           "warning": "감금 패턴. 갇히면 HP 급감.",
-          "drops": ["블랙빈 펫 상자", "힐라 장신구"]
+          "drops": ["블랙빈 펫 상자"]
         },
         {
-          "id": "pinkbean", "name": "핑크빈", "difficulty": "노멀",
-          "points": 100, "coins": 100, "type": "weekly",
+          "id": "pinkbean_chaos", "name": "핑크빈", "difficulty": "카오스",
+          "points": 100, "coins": 100, "premiumCoins": 0, "type": "weekly",
           "reason": "보스 장신구(벨트/펜던트) 드롭.",
           "warning": "석화 패턴. 움직이면 안 되는 타이밍 있음.",
           "drops": ["핑크빈 벨트", "핑크빈 컵"]
         },
         {
-          "id": "cygnus_easy", "name": "시그너스", "difficulty": "이지",
-          "points": 100, "coins": 100, "type": "weekly",
-          "reason": "시그너스 장비 드롭. 초반 세팅용.",
-          "warning": "특별한 주의사항 없음. 입문자용.",
-          "drops": ["시그너스 장비"]
-        },
-        {
           "id": "pierre_chaos", "name": "피에르", "difficulty": "카오스",
-          "points": 100, "coins": 100, "type": "weekly",
-          "reason": "결정석 + 루타비스 세트.",
+          "points": 100, "coins": 100, "premiumCoins": 0, "type": "weekly",
+          "reason": "루타비스 세트.",
           "warning": "모자 쓰면 체력 회복. 색 맞춰 때려야 함.",
           "drops": ["피에르 모자"]
         },
         {
           "id": "vonbon_chaos", "name": "반반", "difficulty": "카오스",
-          "points": 100, "coins": 100, "type": "weekly",
-          "reason": "결정석 + 루타비스 세트.",
+          "points": 100, "coins": 100, "premiumCoins": 0, "type": "weekly",
+          "reason": "루타비스 세트.",
           "warning": "시계 패턴. 시간 내 처치 필요.",
           "drops": ["반반 펜던트"]
         },
         {
           "id": "bloodyqueen_chaos", "name": "블러디퀸", "difficulty": "카오스",
-          "points": 100, "coins": 100, "type": "weekly",
-          "reason": "결정석 + 루타비스 세트.",
+          "points": 100, "coins": 100, "premiumCoins": 0, "type": "weekly",
+          "reason": "루타비스 세트.",
           "warning": "거울 패턴. 거울 바라보면 석화.",
           "drops": ["블러디퀸 반지"]
-        },
-        {
-          "id": "vellum_chaos", "name": "벨룸", "difficulty": "카오스",
-          "points": 100, "coins": 100, "type": "weekly",
-          "reason": "결정석 + 루타비스 세트 완성.",
-          "warning": "꼬리 패턴 즉사. 바닥 위치 잘 봐야 함.",
-          "drops": ["벨룸 헬름"]
         }
       ]
     },
     {
       "name": "일반",
-      "tier": "동별",
-      "description": "200~500pt. 주간 보스 시작. 패턴 숙지 본격 필요.",
-      "guide": "매그너스 하드부터 도전. 스우/데미안 노멀은 챌섭 중반 목표. 가엔슬 이지는 결정석 가성비 좋음.",
+      "tier": "일반",
+      "description": "200~500pt. 주간 보스 시작. 패턴 숙지 필요.",
+      "guide": "매그너스 하드부터 도전. 스우/데미안 노멀은 챌섭 중반 목표. 루시드/윌 이지는 아케인셰이드 입문.",
       "bosses": [
         {
           "id": "magnus_hard", "name": "매그너스", "difficulty": "하드",
-          "points": 200, "coins": 200, "type": "weekly",
-          "reason": "노바 장비(타일런트) 드롭. 결정석 가격 괜찮음.",
+          "points": 200, "coins": 100, "premiumCoins": 0, "type": "weekly",
+          "reason": "노바 장비(타일런트) 드롭.",
           "warning": "운석 패턴 + 맵 축소. 구석에 몰리면 사망.",
           "drops": ["타일런트 장비"]
         },
         {
+          "id": "vellum_chaos", "name": "벨룸", "difficulty": "카오스",
+          "points": 200, "coins": 100, "premiumCoins": 0, "type": "weekly",
+          "reason": "루타비스 세트 완성.",
+          "warning": "꼬리 패턴 즉사. 바닥 위치 잘 봐야 함.",
+          "drops": ["벨룸 헬름"]
+        },
+        {
           "id": "papulatus_chaos", "name": "파풀라투스", "difficulty": "카오스",
-          "points": 300, "coins": 300, "type": "weekly",
+          "points": 300, "coins": 100, "premiumCoins": 0, "type": "weekly",
           "reason": "파풀라투스 마크(눈장식) 드롭. 필수 장비.",
           "warning": "레이저 패턴이 까다로움. 패턴 연습 필수.",
           "drops": ["파풀라투스 마크"]
         },
         {
           "id": "suu_normal", "name": "스우", "difficulty": "노멀",
-          "points": 400, "coins": 400, "type": "weekly",
+          "points": 400, "coins": 200, "premiumCoins": 0, "type": "weekly",
           "reason": "앱솔랩스 무기/방어구 드롭. 중반 핵심 장비.",
-          "warning": "1~3페이즈 구조. 레이저+폭탄 동시 대응. 연습모드 먼저.",
+          "warning": "1~3페이즈 구조. 레이저+폭탄 동시 대응.",
           "drops": ["앱솔랩스 무기 상자", "앱솔랩스 방어구 상자"]
         },
         {
           "id": "demian_normal", "name": "데미안", "difficulty": "노멀",
-          "points": 400, "coins": 400, "type": "weekly",
+          "points": 400, "coins": 200, "premiumCoins": 0, "type": "weekly",
           "reason": "앱솔랩스 장비 + 마력이 깃든 안대(눈장식).",
           "warning": "칼 패턴 즉사 주의. 2페이즈 브랜디시 회피 필수.",
-          "drops": ["앱솔랩스 무기 상자", "앱솔랩스 방어구 상자", "마력이 깃든 안대"]
+          "drops": ["앱솔랩스 무기 상자", "마력이 깃든 안대"]
         },
         {
-          "id": "gas_easy", "name": "가디언 엔젤 슬라임", "difficulty": "이지",
-          "points": 500, "coins": 500, "type": "weekly",
-          "reason": "가디언 엔젤 링 드롭. 결정석 가성비 최고.",
+          "id": "gas_normal", "name": "가디언 엔젤 슬라임", "difficulty": "노멀",
+          "points": 500, "coins": 200, "premiumCoins": 0, "type": "weekly",
+          "reason": "가디언 엔젤 링 드롭.",
           "warning": "패턴 단순하지만 HP 높음. 딜 체크용.",
-          "drops": ["가디언 엔젤 링", "영원한 환생의 불꽃"]
+          "drops": ["가디언 엔젤 링"]
         },
         {
           "id": "lucid_easy", "name": "루시드", "difficulty": "이지",
-          "points": 500, "coins": 500, "type": "weekly",
+          "points": 500, "coins": 200, "premiumCoins": 0, "type": "weekly",
           "reason": "아케인셰이드 장비 입문. 몽환의 벨트.",
           "warning": "나비/골렘 패턴. 이지는 비교적 무난.",
           "drops": ["아케인셰이드 무기 상자", "몽환의 벨트"]
         },
         {
           "id": "will_easy", "name": "윌", "difficulty": "이지",
-          "points": 500, "coins": 500, "type": "weekly",
+          "points": 500, "coins": 200, "premiumCoins": 0, "type": "weekly",
           "reason": "아케인셰이드 장비. 거미줄 패턴 연습.",
           "warning": "거미줄에 걸리면 행동 불가. 점프로 회피.",
           "drops": ["아케인셰이드 무기 상자"]
@@ -135,157 +142,178 @@
     },
     {
       "name": "고난이도",
-      "tier": "은별",
+      "tier": "고난이도",
       "description": "1,000~2,500pt. 파티 격파 주류. 보스 도핑 필수 구간.",
-      "guide": "루시드 노멀부터 도전. 스우/데미안 하드는 파티 추천. 가엔슬 카오스는 결정석 잭팟.",
+      "guide": "루시드 노멀부터 도전. 스우/데미안 하드는 파티 추천. 더스크 카오스/가엔슬 카오스는 고포인트.",
       "bosses": [
         {
           "id": "lucid_normal", "name": "루시드", "difficulty": "노멀",
-          "points": 1000, "coins": 1000, "type": "weekly",
-          "reason": "아케인셰이드 장비 본격 파밍. 트와일라이트 마크.",
+          "points": 1000, "coins": 300, "premiumCoins": 0, "type": "weekly",
+          "reason": "아케인셰이드 본격 파밍. 트와일라이트 마크.",
           "warning": "2페이즈 꽃 패턴 즉사. 나비 밟기 필수.",
-          "drops": ["아케인셰이드 무기 상자", "아케인셰이드 방어구 상자", "트와일라이트 마크", "나비날개 물방울석"]
+          "drops": ["아케인셰이드 무기 상자", "트와일라이트 마크", "나비날개 물방울석"]
         },
         {
           "id": "will_normal", "name": "윌", "difficulty": "노멀",
-          "points": 1000, "coins": 1000, "type": "weekly",
+          "points": 1000, "coins": 300, "premiumCoins": 0, "type": "weekly",
           "reason": "아케인셰이드 장비 + 저주받은 마도서.",
           "warning": "3페이즈 구조. 각 페이즈 패턴 숙지 필수.",
-          "drops": ["아케인셰이드 무기 상자", "저주받은 마도서", "코브웹 물방울석"]
+          "drops": ["아케인셰이드 무기 상자", "저주받은 마도서"]
         },
         {
           "id": "dusk_normal", "name": "더스크", "difficulty": "노멀",
-          "points": 1000, "coins": 1000, "type": "weekly",
-          "reason": "결정석 + 보스 세트.",
+          "points": 1000, "coins": 300, "premiumCoins": 0, "type": "weekly",
+          "reason": "에레브의 광휘 세트 장비.",
           "warning": "어둠 패턴. 시야 제한 속 회피.",
-          "drops": ["환생의 불꽃", "보스 반지 상자"]
+          "drops": ["에레브의 광휘 장비"]
+        },
+        {
+          "id": "dunkel_normal", "name": "듄켈", "difficulty": "노멀",
+          "points": 1000, "coins": 300, "premiumCoins": 0, "type": "weekly",
+          "reason": "고가 보상. 어둠 계열 보스.",
+          "warning": "어둠 속 패턴 대응. 시야 제한.",
+          "drops": ["환생의 불꽃"]
         },
         {
           "id": "suu_hard", "name": "스우", "difficulty": "하드",
-          "points": 1500, "coins": 1500, "type": "weekly",
-          "reason": "앱솔랩스 드롭률 상승 + 고가 결정석.",
+          "points": 1500, "coins": 400, "premiumCoins": 0, "type": "weekly",
+          "reason": "앱솔랩스 드롭률 상승.",
           "warning": "노멀보다 패턴 빠르고 데미지 높음. 파티 권장.",
           "drops": ["앱솔랩스 무기 상자", "앱솔랩스 방어구 상자"]
         },
         {
           "id": "demian_hard", "name": "데미안", "difficulty": "하드",
-          "points": 1500, "coins": 1500, "type": "weekly",
+          "points": 1500, "coins": 400, "premiumCoins": 0, "type": "weekly",
           "reason": "앱솔랩스 + 데미안로이드.",
           "warning": "브랜디시 강화. 즉사 빈도 높음.",
-          "drops": ["앱솔랩스 무기 상자", "데미안로이드", "뒤틀린 낙인의 영혼석"]
+          "drops": ["앱솔랩스 무기 상자", "데미안로이드"]
         },
         {
           "id": "lucid_hard", "name": "루시드", "difficulty": "하드",
-          "points": 2000, "coins": 2000, "type": "weekly",
+          "points": 2000, "coins": 600, "premiumCoins": 0, "type": "weekly",
           "reason": "아케인셰이드 드롭률 상승 + 루시드로이드.",
           "warning": "노멀 패턴 강화 + 새로운 즉사기.",
-          "drops": ["아케인셰이드 무기 상자", "아케인셰이드 방어구 상자", "루시드로이드"]
+          "drops": ["아케인셰이드 무기 상자", "루시드로이드"]
         },
         {
           "id": "jinhilla_normal", "name": "진 힐라", "difficulty": "노멀",
-          "points": 2000, "coins": 2000, "type": "weekly",
-          "reason": "데이브레이크 펜던트. 고가 결정석.",
+          "points": 2000, "coins": 600, "premiumCoins": 0, "type": "weekly",
+          "reason": "데이브레이크 펜던트. 고포인트.",
           "warning": "감금+즉사 조합. 부활 횟수 관리 중요.",
-          "drops": ["아케인셰이드 무기 상자", "데이브레이크 펜던트", "고통의 근원"]
+          "drops": ["데이브레이크 펜던트", "고통의 근원"]
         },
         {
           "id": "will_hard", "name": "윌", "difficulty": "하드",
-          "points": 2500, "coins": 2500, "type": "weekly",
-          "reason": "고가 결정석 + 아케인셰이드.",
+          "points": 2500, "coins": 600, "premiumCoins": 0, "type": "weekly",
+          "reason": "고포인트 + 아케인셰이드.",
           "warning": "3페이즈 강화. 숙련자 전용.",
           "drops": ["아케인셰이드 무기 상자", "저주받은 마도서"]
         },
         {
           "id": "gas_chaos", "name": "가디언 엔젤 슬라임", "difficulty": "카오스",
-          "points": 2500, "coins": 2500, "type": "weekly",
-          "reason": "영원한 환생의 불꽃 + 고가 결정석.",
+          "points": 2500, "coins": 600, "premiumCoins": 0, "type": "weekly",
+          "reason": "영원한 환생의 불꽃 + 고포인트.",
           "warning": "HP 압도적. 딜 컷 높음.",
           "drops": ["가디언 엔젤 링", "영원한 환생의 불꽃"]
+        },
+        {
+          "id": "dusk_chaos", "name": "더스크", "difficulty": "카오스",
+          "points": 2500, "coins": 600, "premiumCoins": 0, "type": "weekly",
+          "reason": "에레브의 광휘 세트 + 고포인트.",
+          "warning": "노멀 패턴 강화. 고스펙 요구.",
+          "drops": ["에레브의 광휘 장비"]
         }
       ]
     },
     {
       "name": "극한",
-      "tier": "금별",
-      "description": "3,000~9,000pt. 최상위 보스. 상급 코인 획득. 극한 스펙+컨트롤 요구.",
-      "guide": "진힐라 하드부터 극한 구간 시작. 세렌/칼로스/대적자는 파티 필수. 카이 노멀은 챌섭 전용 시즌 보스.",
+      "tier": "극한",
+      "description": "3,000~9,000pt. 최상위 보스. 상급 코인 획득. 극한의 스펙+컨트롤 요구.",
+      "guide": "진힐라 하드부터 극한 입문. 카이 노멀은 마스터 티어 필수. 카이 하드는 챌린저 티어 필수.",
       "bosses": [
         {
           "id": "jinhilla_hard", "name": "진 힐라", "difficulty": "하드",
-          "points": 3000, "coins": 3000, "type": "weekly",
-          "reason": "데이브레이크 + 고가 결정석. 극한 입문.",
+          "points": 3000, "coins": 1000, "premiumCoins": 0, "type": "weekly",
+          "reason": "극한 입문. 데이브레이크 + 고포인트.",
           "warning": "전 패턴 강화. 부활 횟수 적음.",
           "drops": ["데이브레이크 펜던트", "고통의 근원"]
         },
         {
           "id": "dunkel_hard", "name": "듄켈", "difficulty": "하드",
-          "points": 3000, "coins": 3000, "type": "weekly",
-          "reason": "결정석 고가.",
+          "points": 3000, "coins": 1000, "premiumCoins": 0, "type": "weekly",
+          "reason": "고포인트.",
           "warning": "어둠 속 패턴 대응.",
           "drops": ["환생의 불꽃"]
         },
         {
           "id": "kai_normal", "name": "카이", "difficulty": "노멀",
-          "points": 5000, "coins": 5000, "type": "weekly",
-          "reason": "챌섭 시즌 보스. 마스터 티어 달성 조건(노멀 처치 필수).",
-          "warning": "시즌 전용 보스. 패턴 공략 영상 필수 시청.",
-          "drops": ["시즌 전용 보상"]
+          "points": 5000, "coins": 1200, "premiumCoins": 10, "type": "season",
+          "reason": "챌섭 전용 시즌 보스. 마스터 티어 달성 조건.",
+          "warning": "Lv.270 이상. 솔로 플레이만 가능. 패턴 영상 필수.",
+          "drops": ["메소 주머니", "칠흑 보스 장신구 상자", "솔 에르다 조각"]
         },
         {
           "id": "blackmage_hard", "name": "검은 마법사", "difficulty": "하드",
-          "points": 6000, "coins": 6000, "type": "monthly",
-          "reason": "최고가 결정석. 월간 보스.",
+          "points": 6000, "coins": 1400, "premiumCoins": 20, "type": "monthly",
+          "reason": "제네시스 무기. 월간 보스.",
           "warning": "메이플 최종 보스급. 파티 6인 필수.",
           "drops": ["제네시스 무기"]
         },
         {
           "id": "seren_normal", "name": "선택받은 세렌", "difficulty": "노멀",
-          "points": 6000, "coins": 6000, "type": "weekly",
-          "reason": "미트라 분노(장갑) + 데이브레이크 펜던트.",
+          "points": 6000, "coins": 1400, "premiumCoins": 20, "type": "weekly",
+          "reason": "미트라의 분노(장갑).",
           "warning": "즉사 패턴 다수. 무적기 타이밍 중요.",
-          "drops": ["미트라의 분노 선택 상자", "데이브레이크 펜던트"]
+          "drops": ["미트라의 분노 선택 상자"]
         },
         {
           "id": "seren_hard", "name": "선택받은 세렌", "difficulty": "하드",
-          "points": 7000, "coins": 7000, "type": "weekly",
-          "reason": "최고가 결정석 중 하나.",
-          "warning": "노멀 패턴 강화 + 새로운 즉사기. 최상위 스펙 필요.",
+          "points": 7000, "coins": 2000, "premiumCoins": 30, "type": "weekly",
+          "reason": "최상위 보상.",
+          "warning": "노멀 패턴 강화 + 새로운 즉사기. 최상위 스펙.",
           "drops": ["미트라의 분노 선택 상자", "미트라 코어 젬스톤"]
         },
         {
           "id": "callos_easy", "name": "감시자 칼로스", "difficulty": "이지",
-          "points": 7000, "coins": 7000, "type": "weekly",
-          "reason": "에테르넬 방어구 + 칼로스의 의지.",
+          "points": 7000, "coins": 2000, "premiumCoins": 30, "type": "weekly",
+          "reason": "에테르넬 방어구.",
           "warning": "파티 필수. 패턴 복잡.",
-          "drops": ["에테르넬 방어구 상자", "칼로스의 의지", "니키로이드"]
-        },
-        {
-          "id": "kalos_normal", "name": "감시자 칼로스", "difficulty": "노멀",
-          "points": 9000, "coins": 9000, "type": "weekly",
-          "reason": "최고가 결정석.",
-          "warning": "최상위 스펙 + 파티 합.",
           "drops": ["에테르넬 방어구 상자", "칼로스의 의지"]
         },
         {
           "id": "rival_easy", "name": "최초의 대적자", "difficulty": "이지",
-          "points": 7000, "coins": 7000, "type": "weekly",
-          "reason": "최상위 장비 드롭.",
+          "points": 7000, "coins": 2000, "premiumCoins": 30, "type": "weekly",
+          "reason": "최상위 장비.",
           "warning": "파티 필수.",
           "drops": ["대적자 장비"]
         },
         {
+          "id": "kai_hard", "name": "카이", "difficulty": "하드",
+          "points": 8000, "coins": 3000, "premiumCoins": 60, "type": "season",
+          "reason": "챌린저 티어 달성 조건. 챌섭 최고 난이도.",
+          "warning": "Lv.280 이상. 솔로 플레이. 최상위 스펙 필수.",
+          "drops": ["솔 에르다 조각 상자", "에테르넬 방어구 상자"]
+        },
+        {
+          "id": "callos_normal", "name": "감시자 칼로스", "difficulty": "노멀",
+          "points": 9000, "coins": 3000, "premiumCoins": 60, "type": "weekly",
+          "reason": "최고 포인트 보스 중 하나.",
+          "warning": "최상위 스펙 + 파티 합.",
+          "drops": ["에테르넬 방어구 상자", "칼로스의 의지"]
+        },
+        {
           "id": "rival_normal", "name": "최초의 대적자", "difficulty": "노멀",
-          "points": 9000, "coins": 9000, "type": "weekly",
-          "reason": "최고가 결정석.",
+          "points": 9000, "coins": 3000, "premiumCoins": 60, "type": "weekly",
+          "reason": "최고 포인트 보스 중 하나.",
           "warning": "현존 최상위 난이도급.",
           "drops": ["대적자 장비"]
         },
         {
-          "id": "kai_hard", "name": "카이", "difficulty": "하드",
-          "points": 8000, "coins": 8000, "type": "weekly",
-          "reason": "챌린저 티어 달성 조건(하드 처치 필수). 최대 포인트.",
-          "warning": "시즌 보스 최고 난이도. 최상위 스펙 필수.",
-          "drops": ["시즌 전용 보상"]
+          "id": "karing_easy", "name": "카링", "difficulty": "이지",
+          "points": 9000, "coins": 3000, "premiumCoins": 60, "type": "weekly",
+          "reason": "최고 포인트 보스.",
+          "warning": "최상위 난이도. 파티 필수.",
+          "drops": ["카링 장비"]
         }
       ]
     }

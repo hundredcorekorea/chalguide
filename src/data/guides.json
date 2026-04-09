@@ -1,0 +1,373 @@
+{
+  "dataSource": "maple.ai.kr + 인벤(다툽/물다야제맛/비뉴냥/리썽) + 에펨코리아 교차검증 (2026-04-09)",
+  "reliabilityScale": {
+    "confirmed": "3개+ 소스 교차검증 완료. 신뢰도 높음.",
+    "likely": "2개 소스 일치. 대체로 정확하나 일부 오차 가능.",
+    "reference": "1개 소스만 확인. 참고용. 유저 피드백으로 보정 필요."
+  },
+  "guides": [
+    {
+      "id": "specup-roadmap",
+      "title": "스펙업 로드맵",
+      "icon": "📈",
+      "category": "핵심",
+      "categoryColor": "orange",
+      "time": "10분",
+      "level": "초급",
+      "desc": "큐브 투자 순서부터 코인샵 운영까지. 다이아 티어 달성 최적 루트.",
+      "reliability": "reference",
+      "sources": ["인벤(다툽)"],
+      "sections": [
+        {
+          "title": "큐브 투자 우선순위",
+          "reliability": "reference",
+          "sources": ["인벤(다툽)"],
+          "content": "챌린저스에서 받는 큐브/잠재 자원은 한정적이므로 투자 순서가 매우 중요합니다.",
+          "steps": [
+            {
+              "rank": "1순위",
+              "target": "보조무기",
+              "strategy": "유잠+에에잠 → 블큐+화에큐 집중 → 윗잠 레전드리 후 명큐",
+              "goal": "주스탯% 최대한"
+            },
+            {
+              "rank": "2순위",
+              "target": "엠블렘",
+              "strategy": "코인샵 에에잠 → 명큐+수에큐",
+              "goal": "주스탯/공마 9~15%, 에디 6%"
+            },
+            {
+              "rank": "3순위",
+              "target": "페어리 하트",
+              "strategy": "30퍼작 → 유잠+에에잠 → 명큐+수에큐",
+              "goal": "주스탯 15%, 에디 1.5~2줄"
+            },
+            {
+              "rank": "4순위",
+              "target": "매커네이터",
+              "strategy": "놀긍떡작 → 수큐+수에큐",
+              "goal": "주스탯 6~9%, 에디 공 10"
+            },
+            {
+              "rank": "5순위",
+              "target": "이벤트링 3종",
+              "strategy": "초반 드메 1줄, 이후 21%+, 이터널 링 15% 스탑",
+              "goal": "주스탯 21%+ 각"
+            }
+          ]
+        },
+        {
+          "title": "코인샵 운영 (총 20,500개)",
+          "reliability": "reference",
+          "sources": ["인벤(다툽)"],
+          "content": "약 4주간 코인을 모아야 합니다. 우선순위: 큐브 → 남은 코인 솔 에르다 조각 풀매수.",
+          "items": [
+            { "item": "잠재능력 관련", "cost": "9,000개", "priority": "최우선" },
+            { "item": "이벤링 큐브 100개", "cost": "6,000개", "priority": "높음" },
+            { "item": "솔 에르다 조각", "cost": "남은 전부", "priority": "잔여" }
+          ]
+        },
+        {
+          "title": "목표 스펙 (다이아 달성 기준)",
+          "reliability": "reference",
+          "sources": ["인벤(다툽)"],
+          "content": "277레벨, 4천 플마단 기준으로 약 200% 배율 목표.",
+          "specs": [
+            { "항목": "헥사 주력기", "목표": "9강" },
+            { "항목": "아케인 심볼", "목표": "만렙" },
+            { "항목": "어센틱 심볼", "목표": "5레벨 둘둘" },
+            { "항목": "헥사 스탯", "목표": "1, 2 개방" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "equipment-progression",
+      "title": "보스 장비 성장 로드맵",
+      "icon": "🗡️",
+      "category": "핵심",
+      "categoryColor": "orange",
+      "time": "10분",
+      "level": "초급",
+      "desc": "무자본 10단계 장비 성장. 도전자세트부터 에테르넬까지.",
+      "reliability": "likely",
+      "sources": ["maple.ai.kr", "인벤(물다야제맛)"],
+      "sections": [
+        {
+          "title": "10단계 성장 로드맵",
+          "reliability": "likely",
+          "sources": ["maple.ai.kr", "인벤(물다야제맛)"],
+          "steps": [
+            { "stage": 1, "name": "도전자 세트", "desc": "챌린저스 시작 시 지급. 기본 장비." },
+            { "stage": 2, "name": "카루타 + 파프니르", "desc": "루타비스 4형제(피에르/반반/블러디퀸/벨룸) 주간 격파. 파프니르 무기 세트효과." },
+            { "stage": 3, "name": "아케인셰이드 12성", "desc": "루시드/윌 이지 진입. 아케인셰이드 무기/방어구 수집 시작." },
+            { "stage": 4, "name": "여명 세트", "desc": "진 힐라 노멀 도전. 데이브레이크 펜던트 등 고급 장신구." },
+            { "stage": 5, "name": "17성 아케인셰이드", "desc": "스타포스 17성 = 국민 세팅. 가성비 최고 구간." },
+            { "stage": 6, "name": "22성 앱솔 vs 17성 아케인", "desc": "비용 비교 후 선택. 22성 앱솔이 17성 아케인보다 약간 높지만 비용 차이 큼." },
+            { "stage": 7, "name": "칠흑/광휘 세트", "desc": "하드 보스(스우/데미안/루시드/윌 하드) 진입. 칠흑 보스 장신구 수집." },
+            { "stage": 8, "name": "22성 아케인/에테르넬", "desc": "22성 = 졸업 스타포스. 에테르넬 방어구 도입." },
+            { "stage": 9, "name": "23성+", "desc": "신화 구간. 파괴 리스크 감수. 고인물 전용." },
+            { "stage": 10, "name": "22성급 장신구", "desc": "최종 목표. 모든 장비 졸업." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "job-recommendation",
+      "title": "직업 추천 가이드",
+      "icon": "🎮",
+      "category": "핵심",
+      "categoryColor": "orange",
+      "time": "8분",
+      "level": "초급",
+      "desc": "챌린저스 뉴비를 위한 4라인 직업 추천 + 비추 9직업.",
+      "reliability": "confirmed",
+      "sources": ["인벤(비뉴냥)", "인벤(다툽)", "에펨코리아"],
+      "sections": [
+        {
+          "title": "추천 라인별 직업",
+          "reliability": "reference",
+          "sources": ["인벤(비뉴냥)"],
+          "lines": [
+            {
+              "name": "컨트롤 우수 + 과금 본캐",
+              "jobs": ["보마", "렌", "메세", "제로", "아란", "캡틴", "스커", "일리움", "은월", "썬콜"]
+            },
+            {
+              "name": "컨트롤 평범 + 과금 본캐",
+              "jobs": ["보마", "렌", "메르", "아란", "캡틴", "스커", "일리움", "은월", "썬콜"]
+            },
+            {
+              "name": "컨트롤 우수 + 유챔 부캐",
+              "jobs": ["칼리", "카데나", "스커", "메르", "일리움"]
+            },
+            {
+              "name": "컨트롤 평범 + 유챔 부캐",
+              "jobs": ["일리움", "보마", "캡틴", "바이퍼", "썬콜", "메르"]
+            }
+          ]
+        },
+        {
+          "title": "TOP 5 추천",
+          "reliability": "confirmed",
+          "sources": ["인벤(비뉴냥)", "인벤(다툽)", "에펨코리아"],
+          "recommendations": [
+            { "job": "보우마스터", "reason": "난이도 극하, 싼 DEX템, 사냥+보스 육각형. 모든 소스에서 1순위 추천.", "tags": ["뉴비추천", "사냥형", "보스형"] },
+            { "job": "캡틴", "reason": "소환수 개선, 템페스트 딸깍, 짧쿨 무적. 편한 보스.", "tags": ["뉴비추천", "보스형"] },
+            { "job": "썬콜", "reason": "텔포캐, 극딜. 투력 7만 이하 부캐 강추.", "tags": ["부캐추천"] },
+            { "job": "일리움", "reason": "유챔계의 황제. 사냥 없이 285 가능(메소 투자). 보스 최상위.", "tags": ["보스형"] },
+            { "job": "렌", "reason": "신직업, 쉬운 조작 + 유틸 + 극딜. 단, 전사라 STR템 비쌈.", "tags": ["보스형"] }
+          ]
+        },
+        {
+          "title": "비추천 직업 (뉴비 기준)",
+          "reliability": "likely",
+          "sources": ["인벤(비뉴냥)", "에펨코리아"],
+          "avoid": [
+            { "job": "에반", "reason": "키 배치 복잡 + 높은 난이도 + 불쾌감" },
+            { "job": "카데나", "reason": "전직업 난이도 1위. 고점 뽑기 극도로 어려움" },
+            { "job": "칼리", "reason": "고점 뽑기 어렵고 원킬컷 높음" },
+            { "job": "제논", "reason": "올스탯% 세팅이 뉴비에게 이질적" },
+            { "job": "블래스터", "reason": "어렵고 낮은 리턴값" },
+            { "job": "미하일", "reason": "약한 성능, 낮은 투자 효율" },
+            { "job": "데몬슬레이어", "reason": "약함 + 높은 피해" },
+            { "job": "데몬어벤져", "reason": "보조무기(포스실드) 교환불가, 직작 압박" },
+            { "job": "배틀메이지", "reason": "야누스 20레벨 전 사냥 극도로 귀찮음" }
+          ]
+        },
+        {
+          "title": "STR 직업은 왜 피해야 하나?",
+          "reliability": "confirmed",
+          "sources": ["인벤(비뉴냥)", "인벤(다툽)", "에펨코리아"],
+          "content": "전사(STR) 카루타 세팅에 ~82억 vs 법사/도적 ~42억. 약 40~80억 차이. 같은 돈으로 법사/궁수/도적/해적이 훨씬 빠르게 스펙업 가능."
+        }
+      ]
+    },
+    {
+      "id": "leveling-route",
+      "title": "레벨링 루트",
+      "icon": "🚀",
+      "category": "육성",
+      "categoryColor": "blue",
+      "time": "8분",
+      "level": "초급",
+      "desc": "200~260 초반 육성부터 275 달성까지 최적 루트.",
+      "reliability": "likely",
+      "sources": ["인벤(다툽)", "인벤(리썽)"],
+      "sections": [
+        {
+          "title": "초반 (30~260)",
+          "reliability": "likely",
+          "sources": ["인벤(다툽)", "인벤(리썽)"],
+          "steps": [
+            { "level": "30~200", "method": "하이퍼 버닝 MAX로 빠르게 도달" },
+            { "level": "200~230", "method": "딸기 농장 입장권 10장 사용 (이벤트 코인샵 매주 5개). 약 230까지 도달." },
+            { "level": "225", "method": "첫날 목표 235레벨 (심볼 누락 방지). 노스우까지 아이템 버닝 미션." },
+            { "level": "235~245", "method": "경험치 3배 쿠폰 사용 후 사냥" },
+            { "level": "245~250", "method": "극한 성장의 비약으로 스킵" },
+            { "level": "250~260", "method": "하이마운틴, 익몬 활용" }
+          ]
+        },
+        {
+          "title": "중반 (260~275)",
+          "reliability": "likely",
+          "sources": ["인벤(다툽)", "인벤(리썽)"],
+          "steps": [
+            { "level": "260~265", "method": "세르니움 진입. 어센틱포스 수집 시작. 서쪽 성벽 사냥." },
+            { "level": "265~270", "method": "호텔 아르크스. 황야/자동차극장 사냥." },
+            { "level": "270~275", "method": "오디움. 제자리 사냥 가능. 275 = 현실적 에메랄드 달성 레벨." }
+          ]
+        },
+        {
+          "title": "필수 아이템 챙기기",
+          "reliability": "reference",
+          "sources": ["인벤(다툽)"],
+          "items": [
+            { "item": "정령의 펜던트", "source": "겨울나기 미션" },
+            { "item": "자석펫", "source": "윈터 카운트다운" },
+            { "item": "인피니티 플레임 칭호", "source": "240레벨 달성" },
+            { "item": "버닝 비욘드 칭호", "source": "인피니티 플레임 만료 후" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hexa-stat-guide",
+      "title": "헥사 스탯 최적화",
+      "icon": "💎",
+      "category": "스펙업",
+      "categoryColor": "purple",
+      "time": "5분",
+      "level": "중급",
+      "desc": "환산 주스탯 구간별 최적 분배. 메인/에디셔널 효율 비교.",
+      "reliability": "reference",
+      "sources": ["maple.ai.kr"],
+      "sections": [
+        {
+          "title": "기본 원리",
+          "reliability": "likely",
+          "sources": ["maple.ai.kr", "넥슨 공식(게임 메커니즘)"],
+          "content": "메인 스탯은 레벨 20까지, 에디셔널 스탯은 레벨 10까지. 메인 = 에디셔널의 약 2배 효율."
+        },
+        {
+          "title": "환산 주스탯 구간별 분배",
+          "reliability": "reference",
+          "sources": ["maple.ai.kr"],
+          "tiers": [
+            { "range": "0~7만", "main": "공격력/마력", "additional": "주스탯%" },
+            { "range": "7~9만", "main": "공격력/마력", "additional": "크리티컬 데미지" },
+            { "range": "9~11.7만", "main": "크리티컬 데미지", "additional": "공격력/마력" },
+            { "range": "11.7만+", "main": "크리티컬 데미지", "additional": "보스 데미지" }
+          ]
+        },
+        {
+          "title": "예산별 가이드",
+          "reliability": "reference",
+          "sources": ["maple.ai.kr"],
+          "budgets": [
+            { "tier": "무과금(떡작)", "strategy": "메인 3~5 수준. 공마 or 크뎀 하나만 집중." },
+            { "tier": "중과금", "strategy": "메인 7~8. 에디 추가 개방." },
+            { "tier": "고인물", "strategy": "메인 10+. 최적 분배 풀 적용." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starforce-guide",
+      "title": "스타포스 가성비 가이드",
+      "icon": "⭐",
+      "category": "스펙업",
+      "categoryColor": "purple",
+      "time": "6분",
+      "level": "초급",
+      "desc": "구간별 효율 분석. 17성 국민세팅부터 22성 졸업까지.",
+      "reliability": "confirmed",
+      "sources": ["maple.ai.kr", "인벤(물다야제맛)", "인벤(다툽)"],
+      "sections": [
+        {
+          "title": "스타포스 구간별 평가",
+          "reliability": "confirmed",
+          "sources": ["maple.ai.kr", "인벤(물다야제맛)", "인벤(다툽)"],
+          "tiers": [
+            { "stars": "0~9성", "rating": "미달", "desc": "기본 강화. 비용 거의 없음." },
+            { "stars": "10~12성", "rating": "입문", "desc": "최소한의 스펙. 뉴비 첫 목표." },
+            { "stars": "13~16성", "rating": "함정", "desc": "애매한 구간. 비용 대비 효율 낮음." },
+            { "stars": "17~18성", "rating": "국민세팅", "desc": "가성비 최고 구간. 대부분 유저의 목표." },
+            { "stars": "19~21성", "rating": "고스펙", "desc": "파괴 리스크 시작. 여유 자금 필요." },
+            { "stars": "22성", "rating": "졸업", "desc": "장비 졸업 기준. 필수 목표." },
+            { "stars": "23성+", "rating": "신화", "desc": "파괴 감수. 고인물 전용." }
+          ]
+        },
+        {
+          "title": "타일런트(슈페리얼) 참고",
+          "reliability": "confirmed",
+          "sources": ["maple.ai.kr", "인벤(물다야제맛)", "넥슨 공식"],
+          "content": "타일런트 15성 MAX. 12성 = 일반 장비 22성급 효과."
+        }
+      ]
+    },
+    {
+      "id": "boss-rewards",
+      "title": "보스별 핵심 보상",
+      "icon": "💰",
+      "category": "보스",
+      "categoryColor": "red",
+      "time": "5분",
+      "level": "초급",
+      "desc": "보스별 핵심 드롭 아이템 + 어떤 보스를 왜 잡아야 하는지.",
+      "reliability": "confirmed",
+      "sources": ["maple.ai.kr", "인벤(물다야제맛)", "넥슨 공식"],
+      "sections": [
+        {
+          "title": "장비 성장에 필수인 보스",
+          "reliability": "confirmed",
+          "sources": ["maple.ai.kr", "인벤(물다야제맛)", "넥슨 공식"],
+          "bosses": [
+            { "boss": "루타비스 4형제", "difficulty": "카오스", "drops": ["카루타 세트 (모자/상의/하의)"], "why": "초반 방어구 세트. 세트효과 강력." },
+            { "boss": "매그너스", "difficulty": "하드", "drops": ["타일런트 장비"], "why": "노바 장비(타일런트). 슈페리얼 12성 = 일반 22성." },
+            { "boss": "파풀라투스", "difficulty": "카오스", "drops": ["파풀라투스 마크(눈장식)"], "why": "필수 눈장식. 보스전 핵심 장비." },
+            { "boss": "스우/데미안", "difficulty": "노멀+", "drops": ["앱솔랩스 무기/방어구"], "why": "중반 핵심 장비. 세트효과 강력." },
+            { "boss": "루시드/윌", "difficulty": "이지+", "drops": ["아케인셰이드 무기/방어구", "몽환의 벨트"], "why": "후반 핵심 장비. 아케인셰이드 세트." },
+            { "boss": "진 힐라", "difficulty": "노멀+", "drops": ["데이브레이크 펜던트"], "why": "최상위 펜던트. 여명 세트." },
+            { "boss": "선택받은 세렌", "difficulty": "노멀+", "drops": ["미트라의 분노(장갑)"], "why": "최상위 장갑. 에테르넬 재료." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "world-riff-schedule",
+      "title": "월드 리프 일정",
+      "icon": "📅",
+      "category": "시즌3",
+      "categoryColor": "green",
+      "time": "2분",
+      "level": "입문",
+      "desc": "챌린저스 → 일반 월드 이전 일정. 놓치면 안 되는 리프 기간.",
+      "reliability": "confirmed",
+      "sources": ["넥슨 공식", "maple.ai.kr", "인벤(다툽)"],
+      "sections": [
+        {
+          "title": "시즌3 리프 일정",
+          "reliability": "confirmed",
+          "sources": ["넥슨 공식"],
+          "schedule": [
+            { "phase": "1차 사전 리프", "period": "2026.01.15 ~ 02.11", "note": "130→101레벨로 조건 완화" },
+            { "phase": "2차 사전 리프", "period": "2026.02.12 ~ 03.18", "note": "" },
+            { "phase": "3차 사전 리프", "period": "2026.03.19 ~ 04.15", "note": "" },
+            { "phase": "종료 리프", "period": "2026.04.16 ~ 04.29", "note": "마지막 기회" }
+          ]
+        },
+        {
+          "title": "리프 후 선택지 3가지",
+          "reliability": "reference",
+          "sources": ["인벤(다툽)"],
+          "options": [
+            { "name": "직업 변경", "desc": "교불 보상만 사용. 285레벨 작업 후 카이 노멀로 시즌 종료." },
+            { "name": "유챔 + 아이템 버닝 쌀먹", "desc": "리프 후 월교가 보상 일부 사용. 장신구 18성 21~30%." },
+            { "name": "유챔 후 보스돌이 정착 (추천)", "desc": "챌섭 보상 독식. 미트라+해방 무기 큐브 투자. 17 에테/18 아케인 방어구." }
+          ]
+        }
+      ]
+    }
+  ]
+}

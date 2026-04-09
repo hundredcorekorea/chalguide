@@ -25,8 +25,12 @@ export default function HuntingPage() {
     : null;
 
   return (
-    <div className="py-8 space-y-6">
-      <h1 className="text-2xl font-bold">사냥터 가이드</h1>
+    <div className="max-w-6xl mx-auto px-4 md:px-6 py-12 space-y-6">
+      <div className="mb-4">
+        <h1 className="text-3xl md:text-4xl font-black mb-2">
+          🗺️ <span className="gradient-text">사냥터 가이드</span>
+        </h1>
+      </div>
 
       {/* Level Input */}
       <div className="p-4 rounded-xl border border-[var(--border)] bg-[var(--bg-card)]">

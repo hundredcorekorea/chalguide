@@ -65,10 +65,12 @@ export default function JobsPage() {
   ];
 
   return (
-    <div className="py-8 space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold">직업 추천</h1>
-        <p className="text-sm text-[var(--text-secondary)] mt-1">
+    <div className="max-w-6xl mx-auto px-4 md:px-6 py-12 space-y-6">
+      <div className="mb-4">
+        <h1 className="text-3xl md:text-4xl font-black mb-2">
+          🎮 <span className="gradient-text">직업 추천</span>
+        </h1>
+        <p className="text-[var(--text-secondary)]">
           챌린저스 메타 기준 · 메이플지지 316만건 실측 · 47개 전 직업
         </p>
       </div>

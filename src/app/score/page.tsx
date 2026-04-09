@@ -7,10 +7,10 @@ import bossData from "@/data/bosses.json";
 const tiers = tierData.tiers.filter((t) => t.score > 0);
 
 const TIER_COLORS: Record<string, string> = {
-  납별: "#9ca3af",
-  동별: "#cd7f32",
-  은별: "#c0c0c0",
-  금별: "#ffd700",
+  입문: "#9ca3af",
+  일반: "#3b82f6",
+  고난이도: "#f97316",
+  극한: "#ef4444",
 };
 
 const STORAGE_KEY = "chalguide_score_checks";
@@ -83,11 +83,15 @@ export default function ScorePage() {
   const totalBosses = bossData.categories.reduce((a, c) => a + c.bosses.length, 0);
 
   return (
-    <div className="py-8 space-y-6">
-      <h1 className="text-2xl font-bold">점수 계산기</h1>
-      <p className="text-sm text-[var(--text-secondary)]">
-        잡을 수 있는 보스를 체크하면 점수가 자동 계산됩니다.
-      </p>
+    <div className="max-w-6xl mx-auto px-4 md:px-6 py-12 space-y-6">
+      <div className="mb-4">
+        <h1 className="text-3xl md:text-4xl font-black mb-2">
+          🧮 <span className="gradient-text">점수 계산기</span>
+        </h1>
+        <p className="text-[var(--text-secondary)]">
+          잡을 수 있는 보스를 체크하면 점수가 자동 계산됩니다.
+        </p>
+      </div>
 
       {/* Target + Extra Score */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

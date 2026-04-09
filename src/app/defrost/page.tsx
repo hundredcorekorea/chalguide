@@ -31,13 +31,15 @@ export default function DefrostPage() {
   const isComplete = currentStep >= defrostData.steps.length;
 
   return (
-    <div className="py-8 space-y-6">
-      <h1 className="text-2xl font-bold">
-        <span className="mr-2">🧊</span>해동 가이드
-      </h1>
-      <p className="text-sm text-[var(--text-secondary)]">
-        챌린저스가 처음이거나, 오랜만에 돌아왔다면. 차근차근 알려드릴게요.
-      </p>
+    <div className="max-w-6xl mx-auto px-4 md:px-6 py-12 space-y-6">
+      <div className="mb-4">
+        <h1 className="text-3xl md:text-4xl font-black mb-2">
+          🧊 <span className="gradient-text">해동 가이드</span>
+        </h1>
+        <p className="text-[var(--text-secondary)]">
+          챌린저스가 처음이거나, 오랜만에 돌아왔다면. 차근차근 알려드릴게요.
+        </p>
+      </div>
 
       {/* Progress */}
       <div className="p-4 rounded-xl border border-[var(--border)] bg-[var(--bg-card)]">
