@@ -36,18 +36,29 @@ export default function JobsPage() {
     }
 
     jobs.sort((a, b) => {
+      let diff = 0;
       switch (sort) {
-        case "occupancy": return b.occupancy - a.occupancy;
-        case "overall": return b.overall - a.overall;
-        case "newbie": return b.newbieRating - a.newbieRating;
-        case "hunting": return b.hunting - a.hunting;
-        case "bossing": return b.bossing - a.bossing;
-        default: return 0;
+        case "occupancy": diff = b.occupancy - a.occupancy; break;
+        case "overall": diff = b.overall - a.overall; break;
+        case "newbie": diff = b.newbieRating - a.newbieRating; break;
+        case "hunting": diff = b.hunting - a.hunting; break;
+        case "bossing": diff = b.bossing - a.bossing; break;
       }
+      // 동점이면 점유율로 2차 정렬
+      if (diff === 0) diff = b.occupancy - a.occupancy;
+      return diff;
     });
 
     return jobs;
   }, [filter, sort]);
+
+  const setFilterWithSort = (f: FilterType) => {
+    setFilter(f);
+    if (f === "사냥형") setSort("hunting");
+    else if (f === "보스형") setSort("bossing");
+    else if (f === "뉴비추천") setSort("newbie");
+    else if (f === "all" && sort !== "occupancy" && sort !== "overall") setSort("occupancy");
+  };
 
   const filters: { id: FilterType; label: string }[] = [
     { id: "all", label: `전체 (${jobData.jobs.length})` },
@@ -80,7 +91,7 @@ export default function JobsPage() {
         {filters.map((f) => (
           <button
             key={f.id}
-            onClick={() => setFilter(f.id)}
+            onClick={() => setFilterWithSort(f.id)}
             className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${
               filter === f.id
                 ? "bg-[var(--accent-orange)] text-white"
