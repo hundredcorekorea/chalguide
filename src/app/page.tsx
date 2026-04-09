@@ -24,67 +24,28 @@ function formatCountdown(target: Date): string {
 }
 
 const FEATURES = [
-  {
-    href: "/boss",
-    icon: "⚔️",
-    title: "보스 체크리스트",
-    desc: "주간 보스 클리어 체크 + 결정석 수입 추적",
-    badge: "핵심",
-    badgeColor: "badge-orange",
-    gradient: "from-orange-500/20 to-red-500/20",
-  },
-  {
-    href: "/calc",
-    icon: "🧮",
-    title: "점수 계산기",
-    desc: "목표 티어까지 D-day 예측 + 주간 점수 시뮬레이션",
-    badge: "인기",
-    badgeColor: "badge-gold",
-    gradient: "from-amber-500/20 to-yellow-500/20",
-  },
-  {
-    href: "/quest",
-    icon: "📋",
-    title: "주간퀘스트 헬퍼",
-    desc: "레벨별 해금 콘텐츠 + 공략법 + 유튜브 가이드",
-    badge: "매주",
-    badgeColor: "badge-blue",
-    gradient: "from-blue-500/20 to-cyan-500/20",
-  },
-  {
-    href: "/jobs",
-    icon: "🎮",
-    title: "직업 추천",
-    desc: "47개 전 직업 5성 평가 + 점유율 데이터 기반",
-    badge: "47직업",
-    badgeColor: "badge-purple",
-    gradient: "from-purple-500/20 to-pink-500/20",
-  },
-  {
-    href: "/hunting",
-    icon: "🗺️",
-    title: "사냥터 가이드",
-    desc: "레벨별 추천 사냥터 + 아케인/어센틱 포스 요구치",
-    badge: "",
-    badgeColor: "",
-    gradient: "from-green-500/20 to-emerald-500/20",
-  },
-  {
-    href: "/guide",
-    icon: "📚",
-    title: "전체 가이드",
-    desc: "해동 가이드, 은어 사전, 시즌 정보 등 모든 공략",
-    badge: "",
-    badgeColor: "",
-    gradient: "from-slate-500/20 to-slate-400/20",
-  },
+  { icon: "📊", title: "실시간 보스 체크", desc: "39종 보스 미션 포인트 자동 계산", href: "/boss" },
+  { icon: "🎯", title: "점수 시뮬레이션", desc: "목표 티어까지 D-day 예측", href: "/calc" },
+  { icon: "🔍", title: "직업 성능 비교", desc: "47개 전 직업 5성 평가 + 점유율", href: "/jobs" },
+  { icon: "💎", title: "사냥터 가이드", desc: "레벨별 추천 + 포스 요구치", href: "/hunting" },
+  { icon: "🌟", title: "스펙업 로드맵", desc: "장비 성장 10단계 + 큐브 순서", href: "/guide/equipment-progression" },
+  { icon: "🔗", title: "신뢰도 검증 시스템", desc: "3소스 교차검증 데이터 기반", href: "/guide" },
 ];
 
-const QUICK_STATS = [
-  { label: "보스", value: "26종", icon: "⚔️" },
-  { label: "직업", value: "47개", icon: "🎮" },
-  { label: "사냥터", value: "12곳", icon: "🗺️" },
-  { label: "시즌", value: "S3", icon: "👑" },
+const STEPS = [
+  { num: "01", title: "보스 체크", desc: "매주 잡은 보스를 체크하면 포인트가 자동 계산됩니다" },
+  { num: "02", title: "점수 확인", desc: "목표 티어를 설정하면 남은 주수와 필요 점수를 알려줍니다" },
+  { num: "03", title: "가이드 참고", desc: "스펙업/직업/사냥터 가이드로 최적 루트를 찾아보세요" },
+  { num: "04", title: "신뢰도 확인", desc: "각 정보의 교차검증 수를 확인하고 판단하세요" },
+];
+
+const GUIDES = [
+  { title: "직업 추천 가이드", desc: "뉴비를 위한 4라인 추천 + 비추 9직업", href: "/guide/job-recommendation", badge: "검증됨" },
+  { title: "스타포스 가성비", desc: "17성 국민세팅부터 22성 졸업까지", href: "/guide/starforce-guide", badge: "검증됨" },
+  { title: "보스 장비 로드맵", desc: "도전자세트부터 에테르넬까지 10단계", href: "/guide/equipment-progression", badge: "높음" },
+  { title: "레벨링 루트", desc: "200~275 최적 육성 루트", href: "/guide/leveling-route", badge: "높음" },
+  { title: "헥사 스탯 최적화", desc: "환산 주스탯 구간별 최적 분배", href: "/guide/hexa-stat-guide", badge: "참고" },
+  { title: "월드 리프 일정", desc: "놓치면 안 되는 리프 기간 총정리", href: "/guide/world-riff-schedule", badge: "검증됨" },
 ];
 
 export default function Home() {
@@ -102,121 +63,134 @@ export default function Home() {
   if (!mounted) return null;
 
   return (
-    <div className="max-w-6xl mx-auto px-4 md:px-6">
-      {/* Hero Section */}
-      <section className="py-16 md:py-24 text-center">
-        <h1 className="text-4xl md:text-6xl font-black mb-4 tracking-tight">
-          <span className="gradient-text">챌린저스</span> 할 때
-          <br />
-          제일 먼저 여는 곳
+    <div className="bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
+      {/* Hero */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-4 tracking-tight">
+          <span className="text-orange-400">챌섭</span>가이드
         </h1>
-        <p className="text-[var(--text-secondary)] text-lg md:text-xl mb-8 max-w-xl mx-auto">
-          보스 체크, 점수 계산, 직업 추천까지
-          <br />
+        <p className="text-slate-400 text-lg sm:text-xl mb-8 max-w-2xl mx-auto">
           챌린저스 월드 전용 AI 공략 가이드
+          <br />
+          <span className="text-slate-500 text-base">시즌 3 CROWN · 교차검증 데이터 기반</span>
         </p>
 
         {/* Quick Stats */}
-        <div className="flex justify-center gap-6 md:gap-10 mb-12">
-          {QUICK_STATS.map((s) => (
+        <div className="flex justify-center gap-6 sm:gap-10 mb-10">
+          {[
+            { icon: "⚔️", value: "39종", label: "보스 미션" },
+            { icon: "🎮", value: "47개", label: "직업" },
+            { icon: "🗺️", value: "17곳", label: "사냥터" },
+            { icon: "👑", value: "S3", label: "시즌" },
+          ].map((s) => (
             <div key={s.label} className="text-center">
               <div className="text-2xl mb-1">{s.icon}</div>
-              <div className="text-lg font-bold text-[var(--text-primary)]">{s.value}</div>
-              <div className="text-xs text-[var(--text-muted)]">{s.label}</div>
+              <div className="text-lg font-bold">{s.value}</div>
+              <div className="text-xs text-slate-500">{s.label}</div>
             </div>
           ))}
         </div>
 
         {/* Reset Countdown */}
-        <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-[var(--border)] bg-[var(--bg-card)]">
-          <span className="text-sm text-[var(--text-secondary)]">⏰ 주간 초기화</span>
-          <span className="text-lg font-bold text-[var(--accent-orange)]">{countdown}</span>
-          <span className="text-xs text-[var(--text-muted)]">목 00:00 KST</span>
+        <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-slate-700 bg-slate-800/30">
+          <span className="text-sm text-slate-400">⏰ 주간 초기화</span>
+          <span className="text-lg font-bold text-orange-400">{countdown}</span>
+          <span className="text-xs text-slate-500">목 00:00 KST</span>
         </div>
       </section>
 
-      {/* Feature Grid */}
-      <section className="pb-12">
-        <h2 className="text-sm font-bold text-[var(--text-muted)] uppercase tracking-wider mb-6">
-          📊 주요 기능
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {/* Features */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+        <h2 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-6">주요 기능</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {FEATURES.map((f) => (
             <Link
-              key={f.href}
+              key={f.title}
               href={f.href}
-              className={`card-hover rounded-2xl bg-[var(--bg-card)] p-6 block`}
+              className="group bg-slate-800/40 hover:bg-slate-800/60 border border-slate-700 hover:border-orange-500/50 rounded-2xl p-4 sm:p-6 transition-all duration-200 hover:shadow-lg hover:shadow-orange-500/5"
             >
-              <div className="flex items-start justify-between mb-3">
-                <span className="text-3xl">{f.icon}</span>
-                {f.badge && (
-                  <span className={`badge ${f.badgeColor}`}>{f.badge}</span>
-                )}
+              <span className="text-3xl sm:text-4xl block mb-3 group-hover:scale-110 transition-transform">{f.icon}</span>
+              <h3 className="font-bold text-lg mb-1 group-hover:text-orange-400 transition-colors">{f.title}</h3>
+              <p className="text-sm text-slate-400">{f.desc}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* How to use */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+        <h2 className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-6">이용 방법</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+          {STEPS.map((step) => (
+            <div
+              key={step.num}
+              className="bg-slate-800/40 border border-slate-700 rounded-2xl p-4 sm:p-6"
+            >
+              <div className="text-3xl font-black text-orange-400/20 mb-2">{step.num}</div>
+              <h3 className="font-bold mb-2">{step.title}</h3>
+              <p className="text-sm text-slate-400 leading-relaxed">{step.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Guides (like blog section) */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-xs font-bold text-slate-500 uppercase tracking-wider">공략 가이드</h2>
+          <Link href="/guide" className="text-sm text-orange-400 hover:text-orange-300 transition-colors">
+            전체보기 →
+          </Link>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+          {GUIDES.map((g) => (
+            <Link
+              key={g.title}
+              href={g.href}
+              className="group bg-slate-800/40 hover:bg-slate-800/60 border border-slate-700 hover:border-orange-500/50 rounded-2xl p-4 sm:p-6 transition-all duration-200"
+            >
+              <div className="flex items-center justify-between mb-3">
+                <h3 className="font-bold group-hover:text-orange-400 transition-colors">{g.title}</h3>
+                <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold border ${
+                  g.badge === "검증됨" ? "bg-emerald-500/15 text-emerald-400 border-emerald-500/30" :
+                  g.badge === "높음" ? "bg-amber-500/15 text-amber-400 border-amber-500/30" :
+                  "bg-slate-500/15 text-slate-400 border-slate-500/30"
+                }`}>
+                  {g.badge === "검증됨" ? "✓" : g.badge === "높음" ? "~" : "?"} {g.badge}
+                </span>
               </div>
-              <h3 className="font-bold text-lg mb-2">{f.title}</h3>
-              <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
-                {f.desc}
-              </p>
+              <p className="text-sm text-slate-400 mb-4">{g.desc}</p>
+              <span className="text-orange-400 text-sm sm:opacity-0 sm:group-hover:opacity-100 transition-opacity">
+                가이드 보기 →
+              </span>
             </Link>
           ))}
         </div>
       </section>
 
       {/* Season Info */}
-      <section className="pb-12">
-        <div className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24 md:pb-16">
+        <div className="bg-slate-800/30 rounded-2xl p-4 sm:p-8 border border-slate-700">
           <div className="flex items-center gap-3 mb-4">
             <span className="text-2xl">👑</span>
             <div>
               <h3 className="font-bold text-lg">시즌 3 CROWN</h3>
-              <p className="text-sm text-[var(--text-muted)]">2025.12.18 ~ 2026.04.16</p>
+              <p className="text-sm text-slate-500">2025.12.18 ~ 2026.04.15</p>
             </div>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
-            <div className="p-3 rounded-xl bg-white/5">
-              <div className="text-[var(--text-muted)] text-xs mb-1">티어</div>
-              <div className="font-medium">8단계 (브론즈→챌린저)</div>
-            </div>
-            <div className="p-3 rounded-xl bg-white/5">
-              <div className="text-[var(--text-muted)] text-xs mb-1">최고 점수</div>
-              <div className="font-medium">90,000점</div>
-            </div>
-            <div className="p-3 rounded-xl bg-white/5">
-              <div className="text-[var(--text-muted)] text-xs mb-1">시즌 보스</div>
-              <div className="font-medium">카이</div>
-            </div>
-            <div className="p-3 rounded-xl bg-white/5">
-              <div className="text-[var(--text-muted)] text-xs mb-1">초기화</div>
-              <div className="font-medium">매주 목요일</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* How to use */}
-      <section className="pb-24 md:pb-12">
-        <h2 className="text-sm font-bold text-[var(--text-muted)] uppercase tracking-wider mb-6">
-          🚀 이용 방법
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {[
-            { step: "01", title: "보스 체크", desc: "매주 잡은 보스를 체크하면 결정석 수입이 자동 계산됩니다" },
-            { step: "02", title: "점수 계산", desc: "목표 티어를 설정하면 남은 주수와 필요 점수를 알려줍니다" },
-            { step: "03", title: "직업 탐색", desc: "47개 전 직업의 사냥/보스/뉴비 적합도를 비교해보세요" },
-          ].map((item) => (
-            <div
-              key={item.step}
-              className="rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] p-6"
-            >
-              <div className="text-3xl font-black text-[var(--accent-orange)]/30 mb-2">
-                {item.step}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 text-sm">
+            {[
+              { label: "티어", value: "8단계 (비기너→챌린저)" },
+              { label: "보스 미션", value: "101,300pt" },
+              { label: "시즌 보스", value: "카이 (노멀/하드)" },
+              { label: "초기화", value: "매주 목요일 00:00" },
+            ].map((info) => (
+              <div key={info.label} className="p-3 rounded-xl bg-slate-900/50">
+                <div className="text-slate-500 text-xs mb-1">{info.label}</div>
+                <div className="font-medium">{info.value}</div>
               </div>
-              <h3 className="font-bold mb-2">{item.title}</h3>
-              <p className="text-sm text-[var(--text-secondary)] leading-relaxed">
-                {item.desc}
-              </p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
     </div>
